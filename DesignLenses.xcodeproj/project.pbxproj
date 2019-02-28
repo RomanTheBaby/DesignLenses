@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		0941BBDC22284E0C00603286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BBDB22284E0C00603286 /* AppDelegate.swift */; };
-		0941BBDE22284E0C00603286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BBDD22284E0C00603286 /* ViewController.swift */; };
-		0941BBE122284E0C00603286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0941BBDF22284E0C00603286 /* Main.storyboard */; };
 		0941BBE422284E0C00603286 /* DesignLenses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0941BBE222284E0C00603286 /* DesignLenses.xcdatamodeld */; };
 		0941BBE622284E0D00603286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0941BBE522284E0D00603286 /* Assets.xcassets */; };
 		0941BBE922284E0D00603286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0941BBE722284E0D00603286 /* LaunchScreen.storyboard */; };
+		0941BBF522284E8D00603286 /* Lense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BBF422284E8D00603286 /* Lense.swift */; };
+		0941BBF922284EB900603286 /* LensesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BBF822284EB900603286 /* LensesListViewController.swift */; };
+		0941BBFC22284EDE00603286 /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BBFB22284EDE00603286 /* StoryboardInstantiatable.swift */; };
+		0941BBFE22284F0000603286 /* NibInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BBFD22284F0000603286 /* NibInitializable.swift */; };
+		0941BC0022284F2200603286 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BBFF22284F2200603286 /* ReusableCell.swift */; };
+		0941BC0222284F8600603286 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC0122284F8600603286 /* AppCoordinator.swift */; };
+		0941BC052228500300603286 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC042228500300603286 /* PersistenceService.swift */; };
+		0941BC082228509800603286 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC072228509800603286 /* UIWindow+Extension.swift */; };
+		0941BC0A222850E100603286 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC09222850E100603286 /* Dependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0941BBD822284E0C00603286 /* DesignLenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignLenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0941BBDB22284E0C00603286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0941BBDD22284E0C00603286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0941BBE022284E0C00603286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0941BBE322284E0C00603286 /* DesignLenses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesignLenses.xcdatamodel; sourceTree = "<group>"; };
 		0941BBE522284E0D00603286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0941BBE822284E0D00603286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0941BBEA22284E0D00603286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0941BBF422284E8D00603286 /* Lense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lense.swift; sourceTree = "<group>"; };
+		0941BBF822284EB900603286 /* LensesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensesListViewController.swift; sourceTree = "<group>"; };
+		0941BBFB22284EDE00603286 /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		0941BBFD22284F0000603286 /* NibInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInitializable.swift; sourceTree = "<group>"; };
+		0941BBFF22284F2200603286 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		0941BC0122284F8600603286 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0941BC042228500300603286 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		0941BC072228509800603286 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		0941BC09222850E100603286 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,94 @@
 		0941BBDA22284E0C00603286 /* DesignLenses */ = {
 			isa = PBXGroup;
 			children = (
-				0941BBDB22284E0C00603286 /* AppDelegate.swift */,
-				0941BBDD22284E0C00603286 /* ViewController.swift */,
-				0941BBDF22284E0C00603286 /* Main.storyboard */,
-				0941BBE522284E0D00603286 /* Assets.xcassets */,
+				0941BBF122284E2200603286 /* App */,
+				0941BBF222284E3100603286 /* Library */,
+				0941BBF022284E1300603286 /* Resources */,
 				0941BBE722284E0D00603286 /* LaunchScreen.storyboard */,
 				0941BBEA22284E0D00603286 /* Info.plist */,
-				0941BBE222284E0C00603286 /* DesignLenses.xcdatamodeld */,
 			);
 			path = DesignLenses;
+			sourceTree = "<group>";
+		};
+		0941BBF022284E1300603286 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0941BBE522284E0D00603286 /* Assets.xcassets */,
+				0941BBE222284E0C00603286 /* DesignLenses.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0941BBF122284E2200603286 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0941BBDB22284E0C00603286 /* AppDelegate.swift */,
+				0941BC0122284F8600603286 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0941BBF222284E3100603286 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0941BC062228509000603286 /* Extensions */,
+				0941BC0322284FFD00603286 /* Services */,
+				0941BBFA22284ED600603286 /* Protocols */,
+				0941BBF622284EA000603286 /* Screens */,
+				0941BBF322284E3900603286 /* Models */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0941BBF322284E3900603286 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0941BBF422284E8D00603286 /* Lense.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0941BBF622284EA000603286 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0941BBF722284EA700603286 /* LensesList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0941BBF722284EA700603286 /* LensesList */ = {
+			isa = PBXGroup;
+			children = (
+				0941BBF822284EB900603286 /* LensesListViewController.swift */,
+			);
+			path = LensesList;
+			sourceTree = "<group>";
+		};
+		0941BBFA22284ED600603286 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0941BBFF22284F2200603286 /* ReusableCell.swift */,
+				0941BBFD22284F0000603286 /* NibInitializable.swift */,
+				0941BBFB22284EDE00603286 /* StoryboardInstantiatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0941BC0322284FFD00603286 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0941BC042228500300603286 /* PersistenceService.swift */,
+				0941BC09222850E100603286 /* Dependencies.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0941BC062228509000603286 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0941BC072228509800603286 /* UIWindow+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +220,6 @@
 			files = (
 				0941BBE922284E0D00603286 /* LaunchScreen.storyboard in Resources */,
 				0941BBE622284E0D00603286 /* Assets.xcassets in Resources */,
-				0941BBE122284E0C00603286 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0941BBDE22284E0C00603286 /* ViewController.swift in Sources */,
+				0941BC0022284F2200603286 /* ReusableCell.swift in Sources */,
+				0941BC082228509800603286 /* UIWindow+Extension.swift in Sources */,
+				0941BBFE22284F0000603286 /* NibInitializable.swift in Sources */,
+				0941BBF522284E8D00603286 /* Lense.swift in Sources */,
 				0941BBDC22284E0C00603286 /* AppDelegate.swift in Sources */,
+				0941BC0222284F8600603286 /* AppCoordinator.swift in Sources */,
+				0941BC0A222850E100603286 /* Dependencies.swift in Sources */,
+				0941BBFC22284EDE00603286 /* StoryboardInstantiatable.swift in Sources */,
+				0941BBF922284EB900603286 /* LensesListViewController.swift in Sources */,
+				0941BC052228500300603286 /* PersistenceService.swift in Sources */,
 				0941BBE422284E0C00603286 /* DesignLenses.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +247,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0941BBDF22284E0C00603286 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0941BBE022284E0C00603286 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0941BBE722284E0D00603286 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
