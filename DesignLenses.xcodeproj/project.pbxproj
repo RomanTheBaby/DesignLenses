@@ -20,6 +20,10 @@
 		0941BC052228500300603286 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC042228500300603286 /* PersistenceService.swift */; };
 		0941BC082228509800603286 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC072228509800603286 /* UIWindow+Extension.swift */; };
 		0941BC0A222850E100603286 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC09222850E100603286 /* Dependencies.swift */; };
+		0941BC0C2228578C00603286 /* LensesListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC0B2228578C00603286 /* LensesListViewController.storyboard */; };
+		0941BC10222858E700603286 /* LenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC0E222858E700603286 /* LenseCell.swift */; };
+		0941BC11222858E700603286 /* LenseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC0F222858E700603286 /* LenseCell.xib */; };
+		0941BC1522285C8200603286 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC1422285C8200603286 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		0941BC042228500300603286 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		0941BC072228509800603286 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		0941BC09222850E100603286 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		0941BC0B2228578C00603286 /* LensesListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LensesListViewController.storyboard; sourceTree = "<group>"; };
+		0941BC0E222858E700603286 /* LenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LenseCell.swift; sourceTree = "<group>"; };
+		0941BC0F222858E700603286 /* LenseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LenseCell.xib; sourceTree = "<group>"; };
+		0941BC1422285C8200603286 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				0941BC062228509000603286 /* Extensions */,
-				0941BC0322284FFD00603286 /* Services */,
 				0941BBFA22284ED600603286 /* Protocols */,
+				0941BC0322284FFD00603286 /* Services */,
 				0941BBF622284EA000603286 /* Screens */,
 				0941BBF322284E3900603286 /* Models */,
 			);
@@ -128,7 +136,9 @@
 		0941BBF722284EA700603286 /* LensesList */ = {
 			isa = PBXGroup;
 			children = (
+				0941BC0D222858D100603286 /* LenseCell */,
 				0941BBF822284EB900603286 /* LensesListViewController.swift */,
+				0941BC0B2228578C00603286 /* LensesListViewController.storyboard */,
 			);
 			path = LensesList;
 			sourceTree = "<group>";
@@ -156,8 +166,18 @@
 			isa = PBXGroup;
 			children = (
 				0941BC072228509800603286 /* UIWindow+Extension.swift */,
+				0941BC1422285C8200603286 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0941BC0D222858D100603286 /* LenseCell */ = {
+			isa = PBXGroup;
+			children = (
+				0941BC0E222858E700603286 /* LenseCell.swift */,
+				0941BC0F222858E700603286 /* LenseCell.xib */,
+			);
+			path = LenseCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0941BC0C2228578C00603286 /* LensesListViewController.storyboard in Resources */,
+				0941BC11222858E700603286 /* LenseCell.xib in Resources */,
 				0941BBE922284E0D00603286 /* LaunchScreen.storyboard in Resources */,
 				0941BBE622284E0D00603286 /* Assets.xcassets in Resources */,
 			);
@@ -231,10 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0941BC0022284F2200603286 /* ReusableCell.swift in Sources */,
+				0941BC1522285C8200603286 /* UIView+Extension.swift in Sources */,
 				0941BC082228509800603286 /* UIWindow+Extension.swift in Sources */,
 				0941BBFE22284F0000603286 /* NibInitializable.swift in Sources */,
 				0941BBF522284E8D00603286 /* Lense.swift in Sources */,
 				0941BBDC22284E0C00603286 /* AppDelegate.swift in Sources */,
+				0941BC10222858E700603286 /* LenseCell.swift in Sources */,
 				0941BC0222284F8600603286 /* AppCoordinator.swift in Sources */,
 				0941BC0A222850E100603286 /* Dependencies.swift in Sources */,
 				0941BBFC22284EDE00603286 /* StoryboardInstantiatable.swift in Sources */,
@@ -388,7 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.baby.DesignLenses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -406,7 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.baby.DesignLenses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
