@@ -10,6 +10,8 @@ import UIKit
 
 final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell {
 
+	@IBOutlet weak private var scrollView: UIScrollView!
+
 	@IBOutlet weak private var nameLabel: UILabel!
 	@IBOutlet weak private var imageView: UIImageView!
 	@IBOutlet weak private var categoryLabel: UILabel!
@@ -26,6 +28,7 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 			.map { "- " + $0 }
 			.joined(separator: "\n\n")
 		questionsTextView.textContainerInset.bottom = 16
+		questionsTextView.contentOffset = .zero
 		
 		questionsTextView.text = formattedQuestions
 	}

@@ -30,7 +30,7 @@ final class LensDetailViewController: UIViewController, StoryboardInstantiatable
 		super.viewWillAppear(animated)
 		prepareCollectionLayout()
 
-		DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + 0.13) {
 			self.collectionView.scrollToItem(at: IndexPath(row: self.startIndex, section: 0),
 											 at: .centeredHorizontally, animated: false)
 			self.collectionView.isHidden = false
