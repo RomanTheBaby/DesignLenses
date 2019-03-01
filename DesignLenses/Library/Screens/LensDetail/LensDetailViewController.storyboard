@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8jq-7z-Jxh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lens Detail View Controller-->
+        <scene sceneID="eOM-1S-OPe">
+            <objects>
+                <viewController id="8jq-7z-Jxh" customClass="LensDetailViewController" customModule="DesignLenses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ha-U3-biI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ah5-zp-1YU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OXX-Y1-Rfa">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8jq-7z-Jxh" id="iJ2-Je-m3C"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sae-K2-cMw">
+                                <rect key="frame" x="324" y="28" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="7sO-ab-vZb"/>
+                                    <constraint firstAttribute="height" constant="35" id="SxN-yE-oQB"/>
+                                </constraints>
+                                <state key="normal" image="CloseIcon"/>
+                                <connections>
+                                    <action selector="actionClose:" destination="8jq-7z-Jxh" eventType="touchUpInside" id="7yD-x1-s46"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ah5-zp-1YU" firstAttribute="leading" secondItem="EQX-0K-g14" secondAttribute="leading" id="Dkt-or-leQ"/>
+                            <constraint firstItem="Sae-K2-cMw" firstAttribute="top" secondItem="EQX-0K-g14" secondAttribute="top" constant="8" id="VNr-DC-xje"/>
+                            <constraint firstItem="ah5-zp-1YU" firstAttribute="top" secondItem="8ha-U3-biI" secondAttribute="top" id="cUa-g9-COe"/>
+                            <constraint firstItem="EQX-0K-g14" firstAttribute="trailing" secondItem="Sae-K2-cMw" secondAttribute="trailing" constant="16" id="fpD-7V-Vxc"/>
+                            <constraint firstItem="EQX-0K-g14" firstAttribute="trailing" secondItem="ah5-zp-1YU" secondAttribute="trailing" id="iYi-4h-6HE"/>
+                            <constraint firstAttribute="bottom" secondItem="ah5-zp-1YU" secondAttribute="bottom" id="ySN-bX-c9m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EQX-0K-g14"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ah5-zp-1YU" id="aId-MF-iMF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Xb-6O-I5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12" y="155.17241379310346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CloseIcon" width="153.60000610351562" height="153.60000610351562"/>
+    </resources>
+</document>

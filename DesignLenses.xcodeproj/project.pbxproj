@@ -28,6 +28,10 @@
 		0941BC2122288A6F00603286 /* CDLens+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */; };
 		0941BC2222288A6F00603286 /* CDLens+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC2022288A6F00603286 /* CDLens+CoreDataProperties.swift */; };
 		0941BC2422288B1F00603286 /* Lens.json in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC2322288B1F00603286 /* Lens.json */; };
+		09C5B6532228DEC10058C776 /* LensDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5B6522228DEC10058C776 /* LensDetailViewController.swift */; };
+		09C5B6552228DEE60058C776 /* LensDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C5B6542228DEE60058C776 /* LensDetailViewController.storyboard */; };
+		09C5B6592228E2310058C776 /* LensDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5B6572228E2310058C776 /* LensDetailCell.swift */; };
+		09C5B65A2228E2310058C776 /* LensDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09C5B6582228E2310058C776 /* LensDetailCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLens+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0941BC2022288A6F00603286 /* CDLens+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLens+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0941BC2322288B1F00603286 /* Lens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lens.json; sourceTree = "<group>"; };
+		09C5B6522228DEC10058C776 /* LensDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensDetailViewController.swift; sourceTree = "<group>"; };
+		09C5B6542228DEE60058C776 /* LensDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LensDetailViewController.storyboard; sourceTree = "<group>"; };
+		09C5B6572228E2310058C776 /* LensDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensDetailCell.swift; sourceTree = "<group>"; };
+		09C5B6582228E2310058C776 /* LensDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LensDetailCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,19 +146,20 @@
 		0941BBF622284EA000603286 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				0941BBF722284EA700603286 /* LensesList */,
+				09C5B6512228DEA70058C776 /* LensDetail */,
+				0941BBF722284EA700603286 /* LensList */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		0941BBF722284EA700603286 /* LensesList */ = {
+		0941BBF722284EA700603286 /* LensList */ = {
 			isa = PBXGroup;
 			children = (
 				0941BC0D222858D100603286 /* LenseCell */,
 				0941BBF822284EB900603286 /* LensesListViewController.swift */,
 				0941BC0B2228578C00603286 /* LensesListViewController.storyboard */,
 			);
-			path = LensesList;
+			path = LensList;
 			sourceTree = "<group>";
 		};
 		0941BBFA22284ED600603286 /* Protocols */ = {
@@ -198,6 +207,25 @@
 				0941BC2022288A6F00603286 /* CDLens+CoreDataProperties.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		09C5B6512228DEA70058C776 /* LensDetail */ = {
+			isa = PBXGroup;
+			children = (
+				09C5B6562228E2210058C776 /* LensDetailCell */,
+				09C5B6522228DEC10058C776 /* LensDetailViewController.swift */,
+				09C5B6542228DEE60058C776 /* LensDetailViewController.storyboard */,
+			);
+			path = LensDetail;
+			sourceTree = "<group>";
+		};
+		09C5B6562228E2210058C776 /* LensDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				09C5B6572228E2310058C776 /* LensDetailCell.swift */,
+				09C5B6582228E2310058C776 /* LensDetailCell.xib */,
+			);
+			path = LensDetailCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +290,8 @@
 				0941BC0C2228578C00603286 /* LensesListViewController.storyboard in Resources */,
 				0941BC11222858E700603286 /* LenseCell.xib in Resources */,
 				0941BBE922284E0D00603286 /* LaunchScreen.storyboard in Resources */,
+				09C5B65A2228E2310058C776 /* LensDetailCell.xib in Resources */,
+				09C5B6552228DEE60058C776 /* LensDetailViewController.storyboard in Resources */,
 				0941BBE622284E0D00603286 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,8 +314,10 @@
 				0941BC0222284F8600603286 /* AppCoordinator.swift in Sources */,
 				0941BC0A222850E100603286 /* Dependencies.swift in Sources */,
 				0941BC192228671900603286 /* LenseService.swift in Sources */,
+				09C5B6532228DEC10058C776 /* LensDetailViewController.swift in Sources */,
 				0941BBFC22284EDE00603286 /* StoryboardInstantiatable.swift in Sources */,
 				0941BBF922284EB900603286 /* LensesListViewController.swift in Sources */,
+				09C5B6592228E2310058C776 /* LensDetailCell.swift in Sources */,
 				0941BC052228500300603286 /* PersistenceService.swift in Sources */,
 				0941BC2222288A6F00603286 /* CDLens+CoreDataProperties.swift in Sources */,
 				0941BBE422284E0C00603286 /* DesignLenses.xcdatamodeld in Sources */,

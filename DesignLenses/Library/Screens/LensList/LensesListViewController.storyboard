@@ -30,6 +30,7 @@
                                 <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="plt-2s-4uK" id="weE-iY-YVg"/>
+                                    <outlet property="delegate" destination="plt-2s-4uK" id="iCQ-WY-tgB"/>
                                 </connections>
                             </collectionView>
                         </subviews>

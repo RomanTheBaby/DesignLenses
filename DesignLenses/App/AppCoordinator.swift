@@ -16,6 +16,7 @@ final class AppCoordinator {
 		let navigationController = UINavigationController(rootViewController: rootController)
 		navigationController.navigationBar.barTintColor = .white
 		navigationController.navigationBar.isTranslucent = false
+		navigationController.navigationBar.shadowImage = UIImage()
 
 		return navigationController
 	}()

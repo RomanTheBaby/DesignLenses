@@ -32,13 +32,13 @@
                                 <rect key="frame" x="0.0" y="225" width="400" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="yFY-Nw-J59">
-                                        <rect key="frame" x="12" y="8" width="312" height="29"/>
+                                        <rect key="frame" x="12" y="8" width="320" height="29"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRj-Lq-FUG">
-                                        <rect key="frame" x="336" y="0.0" width="48" height="48"/>
+                                        <rect key="frame" x="344" y="0.0" width="48" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="GRj-Lq-FUG" secondAttribute="height" multiplier="1:1" id="Run-4t-7sI"/>
                                             <constraint firstAttribute="height" constant="48" id="qaH-im-4FS"/>
@@ -53,7 +53,7 @@
                                     <constraint firstItem="GRj-Lq-FUG" firstAttribute="top" secondItem="lbD-d4-Igs" secondAttribute="top" id="ei8-PO-YDn"/>
                                     <constraint firstItem="yFY-Nw-J59" firstAttribute="top" secondItem="lbD-d4-Igs" secondAttribute="top" constant="8" id="gN6-P6-zHn"/>
                                     <constraint firstItem="GRj-Lq-FUG" firstAttribute="leading" secondItem="yFY-Nw-J59" secondAttribute="trailing" constant="12" id="nI8-Kk-t19"/>
-                                    <constraint firstAttribute="trailing" secondItem="GRj-Lq-FUG" secondAttribute="trailing" constant="16" id="nxa-Bw-dVv"/>
+                                    <constraint firstAttribute="trailing" secondItem="GRj-Lq-FUG" secondAttribute="trailing" constant="8" id="nxa-Bw-dVv"/>
                                 </constraints>
                             </view>
                         </subviews>

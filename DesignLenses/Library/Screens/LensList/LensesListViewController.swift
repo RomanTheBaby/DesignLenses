@@ -18,11 +18,11 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 	override func viewDidLoad() {
         super.viewDidLoad()
 
+		title = "Lenses"
+
 		prepareCollectionLayout()
 		prepareNavigationControls()
-
-		lenses = lensService.fetchStoredLenses()
-		collectionView.reloadData()
+		loadCards()
     }
 
 	private func prepareNavigationControls() {
@@ -46,10 +46,20 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 		layout.itemSize = CGSize(width: width, height: height)
 
 		collectionView.collectionViewLayout = layout
-
 		collectionView.register(cell: LenseCell.self)
 	}
 
+	private func loadCards() {
+		lenses = lensService.fetchStoredLenses()
+		collectionView.reloadData()
+	}
+
+	private func presentDetails(for lenses: [Lens], from index: Int) {
+		let detailController = LensDetailViewController.instantiateFromStoryboard()
+		detailController.setLensesQueue(lenses, startIndex: index)
+
+		present(detailController, animated: true, completion: nil)
+	}
 }
 
 extension LensesListViewController {
@@ -58,6 +68,8 @@ extension LensesListViewController {
 		static let LensesInheritemSpacing: CGFloat = 32.0
 	}
 }
+
+// MARK: - UICollectionViewDataSource
 
 extension LensesListViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -68,5 +80,11 @@ extension LensesListViewController: UICollectionViewDataSource {
 		let cell = collectionView.dequeueReusableCell(withType: LenseCell.self, forItemAt: indexPath)
 		cell.render(lenses[indexPath.row])
 		return cell
+	}
+}
+
+extension LensesListViewController: UICollectionViewDelegate {
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		presentDetails(for: lenses, from: indexPath.row)
 	}
 }
