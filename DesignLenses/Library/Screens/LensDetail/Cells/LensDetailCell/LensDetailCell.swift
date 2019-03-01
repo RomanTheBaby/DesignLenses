@@ -18,18 +18,44 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 	@IBOutlet weak private var favoriteButton: UIButton!
 	@IBOutlet weak private var questionsTextView: UITextView!
 
+	@IBOutlet weak private var promptContainer: UIView!
+	@IBOutlet weak private var quoteTextView: UITextView!
+	@IBOutlet weak private var quoteAuthorLabel: UILabel!
+	@IBOutlet weak private var promptTextView: UITextView!
+
+
+	override func awakeFromNib() {
+		super.awakeFromNib()
+
+		promptContainer.layer.borderColor = UIColor.orange.cgColor
+		promptContainer.layer.borderWidth = 2.0
+		promptContainer.layer.cornerRadius = 8.0
+
+		questionsTextView.textContainerInset.bottom = 16
+		questionsTextView.contentOffset = .zero
+	}
+
 	func render(_ lens: Lens) {
 		nameLabel.text = lens.title
 		imageView.image = #imageLiteral(resourceName: lens.imageName)
 
 		favoriteButton.setImage(lens.isFavorite ? #imageLiteral(resourceName: "StarFilledIcon") : #imageLiteral(resourceName: "StarIcon"), for: .normal)
+		
+		questionsTextView.text = lens.formattedQuestions
+		promptTextView.text = lens.prompt
 
-		let formattedQuestions = lens.questions
+		quoteTextView.text = lens.quote
+		quoteTextView.isHidden = lens.quote == nil
+
+		quoteAuthorLabel.text = lens.quoteAuthor
+		quoteAuthorLabel.isHidden = lens.quoteAuthor == nil
+	}
+}
+
+extension Lens {
+	fileprivate var formattedQuestions: String {
+		return questions
 			.map { "- " + $0 }
 			.joined(separator: "\n\n")
-		questionsTextView.textContainerInset.bottom = 16
-		questionsTextView.contentOffset = .zero
-		
-		questionsTextView.text = formattedQuestions
 	}
 }
