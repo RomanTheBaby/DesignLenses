@@ -12,11 +12,17 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 
 	@IBOutlet weak private var collectionView: UICollectionView!
 
+	private let lensService = LensService()
+	private lazy var lenses: [Lens] = []
+
 	override func viewDidLoad() {
         super.viewDidLoad()
 
 		prepareCollectionLayout()
 		prepareNavigationControls()
+
+		lenses = lensService.fetchStoredLenses()
+		collectionView.reloadData()
     }
 
 	private func prepareNavigationControls() {
@@ -35,8 +41,9 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 		layout.scrollDirection = .vertical
 		layout.minimumLineSpacing = Constants.LensesInheritemSpacing
 
-		let width = collectionView.frame.width - (Constants.Offset * 2)
-		layout.itemSize = CGSize(width: width, height: width)
+		let width = UIScreen.main.bounds.width - (Constants.Offset * 2)
+		let height = (width * LenseCell.ImageAspectRation) + LenseCell.BottomContainerHeight
+		layout.itemSize = CGSize(width: width, height: height)
 
 		collectionView.collectionViewLayout = layout
 
@@ -54,11 +61,12 @@ extension LensesListViewController {
 
 extension LensesListViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 5
+		return lenses.count
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withType: LenseCell.self, forItemAt: indexPath)
+		cell.render(lenses[indexPath.row])
 		return cell
 	}
 }

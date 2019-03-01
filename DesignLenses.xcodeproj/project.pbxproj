@@ -24,6 +24,10 @@
 		0941BC10222858E700603286 /* LenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC0E222858E700603286 /* LenseCell.swift */; };
 		0941BC11222858E700603286 /* LenseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC0F222858E700603286 /* LenseCell.xib */; };
 		0941BC1522285C8200603286 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC1422285C8200603286 /* UIView+Extension.swift */; };
+		0941BC192228671900603286 /* LenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC182228671900603286 /* LenseService.swift */; };
+		0941BC2122288A6F00603286 /* CDLens+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */; };
+		0941BC2222288A6F00603286 /* CDLens+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC2022288A6F00603286 /* CDLens+CoreDataProperties.swift */; };
+		0941BC2422288B1F00603286 /* Lens.json in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC2322288B1F00603286 /* Lens.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		0941BC0E222858E700603286 /* LenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LenseCell.swift; sourceTree = "<group>"; };
 		0941BC0F222858E700603286 /* LenseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LenseCell.xib; sourceTree = "<group>"; };
 		0941BC1422285C8200603286 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0941BC182228671900603286 /* LenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LenseService.swift; sourceTree = "<group>"; };
+		0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLens+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0941BC2022288A6F00603286 /* CDLens+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLens+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0941BC2322288B1F00603286 /* Lens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lens.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,7 @@
 		0941BBF022284E1300603286 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0941BC2322288B1F00603286 /* Lens.json */,
 				0941BBE522284E0D00603286 /* Assets.xcassets */,
 				0941BBE222284E0C00603286 /* DesignLenses.xcdatamodeld */,
 			);
@@ -120,6 +129,7 @@
 		0941BBF322284E3900603286 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0941BC1E222889D500603286 /* CoreData */,
 				0941BBF422284E8D00603286 /* Lense.swift */,
 			);
 			path = Models;
@@ -158,6 +168,7 @@
 			children = (
 				0941BC042228500300603286 /* PersistenceService.swift */,
 				0941BC09222850E100603286 /* Dependencies.swift */,
+				0941BC182228671900603286 /* LenseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -178,6 +189,15 @@
 				0941BC0F222858E700603286 /* LenseCell.xib */,
 			);
 			path = LenseCell;
+			sourceTree = "<group>";
+		};
+		0941BC1E222889D500603286 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */,
+				0941BC2022288A6F00603286 /* CDLens+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0941BC2422288B1F00603286 /* Lens.json in Resources */,
 				0941BC0C2228578C00603286 /* LensesListViewController.storyboard in Resources */,
 				0941BC11222858E700603286 /* LenseCell.xib in Resources */,
 				0941BBE922284E0D00603286 /* LaunchScreen.storyboard in Resources */,
@@ -258,12 +279,15 @@
 				0941BBFE22284F0000603286 /* NibInitializable.swift in Sources */,
 				0941BBF522284E8D00603286 /* Lense.swift in Sources */,
 				0941BBDC22284E0C00603286 /* AppDelegate.swift in Sources */,
+				0941BC2122288A6F00603286 /* CDLens+CoreDataClass.swift in Sources */,
 				0941BC10222858E700603286 /* LenseCell.swift in Sources */,
 				0941BC0222284F8600603286 /* AppCoordinator.swift in Sources */,
 				0941BC0A222850E100603286 /* Dependencies.swift in Sources */,
+				0941BC192228671900603286 /* LenseService.swift in Sources */,
 				0941BBFC22284EDE00603286 /* StoryboardInstantiatable.swift in Sources */,
 				0941BBF922284EB900603286 /* LensesListViewController.swift in Sources */,
 				0941BC052228500300603286 /* PersistenceService.swift in Sources */,
+				0941BC2222288A6F00603286 /* CDLens+CoreDataProperties.swift in Sources */,
 				0941BBE422284E0C00603286 /* DesignLenses.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

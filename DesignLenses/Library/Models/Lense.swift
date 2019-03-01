@@ -8,3 +8,14 @@
 
 import Foundation
 
+struct Lens: Decodable {
+	let id: Int16
+	let title: String
+	let prompt: String
+	let imageName: String
+	let questions: [String]
+	let isFavorite: Bool
+
+	let quote: String?
+	let quoteAuthor: String?
+}
