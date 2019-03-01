@@ -143,7 +143,7 @@
 				"I have certain instincts about how this game should be. What is driving those instincts?"
 			],
 			"title": "Resonance",
-			"imageName": "Emotion",
+			"imageName": "Resonance",
 			"isFavorite": false
 		},
 		{
@@ -236,7 +236,7 @@
 				"What would they like or dislike about my game in particular?"
 			],
 			"title": "Player",
-			"imageName": "Emotion",
+			"imageName": "Player",
 			"isFavorite": false
 		},
 		{
@@ -250,7 +250,7 @@
 				"Are the player's skills improving at the rate I had hoped? If not, how can I change that?"
 			],
 			"title": "Flow",
-			"imageName": "Emotion",
+			"imageName": "Flow",
 			"isFavorite": false
 		},
 		{
@@ -273,7 +273,7 @@
 				"On the levels my game is currently operating, how can it fulfill those needs even better?"
 			],
 			"title": "Needs",
-			"imageName": "Emotion",
+			"imageName": "Needs",
 			"isFavorite": false
 		},
 		{
@@ -302,7 +302,7 @@
 			"quote": "Different isn't always better, but better is always different.",
 			"quoteAuthor": "Scotty Meltzer",
 			"title": "Novelty",
-			"imageName": "Emotion",
+			"imageName": "Novelty",
 			"isFavorite": false
 		},
 		{
@@ -315,7 +315,7 @@
 				"Does the judgment make them want to improve?"
 			],
 			"title": "Judgment",
-			"imageName": "Emotion",
+			"imageName": "Judgment",
 			"isFavorite": false
 		},
 		{
@@ -329,7 +329,7 @@
 				"Would a hierarchy of time structures help my game? That is, several short rounds that together constitute a large round?"
 			],
 			"title": "Time",
-			"imageName": "Emotion",
+			"imageName": "Time",
 			"isFavorite": false
 		},
 		{
@@ -1351,7 +1351,7 @@
 				"How will we get information we need?"
 			],
 			"title": "Playtesting",
-			"imageName": "Emotion",
+			"imageName": "Playtesting",
 			"isFavorite": false
 		},
 		{
@@ -1365,7 +1365,7 @@
 				"Is there a \"disruptive technology\" I should consider instead?"
 			],
 			"title": "Technology",
-			"imageName": "Emotion",
+			"imageName": "Technology",
 			"isFavorite": false
 		},
 		{
@@ -1377,7 +1377,7 @@
 				"What will ____ be like ten years from now? Why?"
 			],
 			"title": "Crystal Ball",
-			"imageName": "Emotion",
+			"imageName": "CrystalBall",
 			"isFavorite": false
 		},
 		{
@@ -1390,7 +1390,7 @@
 				"Does my game make the world a better place?"
 			],
 			"title": "Utopia",
-			"imageName": "Emotion",
+			"imageName": "Utopia",
 			"isFavorite": false
 		},
 		{
@@ -1402,7 +1402,7 @@
 				"What does the client really want, deep down in his heart?"
 			],
 			"title": "The Client",
-			"imageName": "Emotion",
+			"imageName": "Client",
 			"isFavorite": false
 		},
 		{
@@ -1415,7 +1415,7 @@
 				"What do the people you are pitching to need to know about your game?"
 			],
 			"title": "The Pitch",
-			"imageName": "Emotion",
+			"imageName": "Pitch",
 			"isFavorite": false
 		},
 		{
@@ -1428,7 +1428,7 @@
 				"What are the barriers to entry in the market for this game?"
 			],
 			"title": "Profit",
-			"imageName": "Emotion",
+			"imageName": "Profit",
 			"isFavorite": false
 		},
 		{
@@ -1439,7 +1439,7 @@
 				"How can my game change players for the worse?"
 			],
 			"title": "Transformation",
-			"imageName": "Emotion",
+			"imageName": "Transformation",
 			"isFavorite": false
 		},
 		{
@@ -1449,7 +1449,7 @@
 				"Does my game help people? How?"
 			],
 			"title": "Responsibility",
-			"imageName": "Emotion",
+			"imageName": "Responsibility",
 			"isFavorite": false
 		},
 		{
@@ -1459,7 +1459,7 @@
 				"Is making this game worth my time?"
 			],
 			"title": "Raven",
-			"imageName": "Emotion",
+			"imageName": "Raven",
 			"isFavorite": false
 		},
 		{
@@ -1469,7 +1469,7 @@
 				"Why am I doing this?"
 			],
 			"title": "Your Secret Purpose",
-			"imageName": "Emotion",
+			"imageName": "Purpose",
 			"isFavorite": false
 		}
 	]
