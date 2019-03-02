@@ -27,10 +27,14 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 
 	private func prepareNavigationControls() {
 		let filterButton = UIBarButtonItem(image: #imageLiteral(resourceName: "FilterIcon"), style: .plain,
-										   target: nil, action: nil)
+										   target: self, action: #selector(scrollToBottom))
 		filterButton.tintColor = .black
 
 		navigationItem.rightBarButtonItem = filterButton
+	}
+
+	@objc private func scrollToBottom() {
+		collectionView.scrollToItem(at: IndexPath(row: 9, section: 0), at: .top, animated: true)
 	}
 
 	private func prepareCollectionLayout() {

@@ -19,7 +19,7 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 	@IBOutlet weak private var questionsTextView: UITextView!
 
 	@IBOutlet weak private var promptContainer: UIView!
-	@IBOutlet weak private var quoteTextView: UITextView!
+	@IBOutlet weak private var quoteLabel: UILabel!
 	@IBOutlet weak private var quoteAuthorLabel: UILabel!
 	@IBOutlet weak private var promptTextView: UITextView!
 
@@ -30,9 +30,6 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 		promptContainer.layer.borderColor = UIColor.orange.cgColor
 		promptContainer.layer.borderWidth = 2.0
 		promptContainer.layer.cornerRadius = 8.0
-
-		questionsTextView.textContainerInset.bottom = 16
-		questionsTextView.contentOffset = .zero
 	}
 
 	func render(_ lens: Lens) {
@@ -44,11 +41,20 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 		questionsTextView.text = lens.formattedQuestions
 		promptTextView.text = lens.prompt
 
-		quoteTextView.text = lens.quote
-		quoteTextView.isHidden = lens.quote == nil
+		quoteLabel.text = lens.quote
+		quoteLabel.isHidden = lens.quote == nil
 
 		quoteAuthorLabel.text = lens.quoteAuthor
 		quoteAuthorLabel.isHidden = lens.quoteAuthor == nil
+
+		promptContainer.layoutSubviews()
+	}
+
+	override func prepareForReuse() {
+		super.prepareForReuse()
+
+		quoteLabel.isHidden = false
+		quoteAuthorLabel.isHidden = false
 	}
 }
 
