@@ -25,7 +25,6 @@
 		0941BC11222858E700603286 /* LenseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC0F222858E700603286 /* LenseCell.xib */; };
 		0941BC1522285C8200603286 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC1422285C8200603286 /* UIView+Extension.swift */; };
 		0941BC2122288A6F00603286 /* CDLens+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */; };
-		0941BC2222288A6F00603286 /* CDLens+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC2022288A6F00603286 /* CDLens+CoreDataProperties.swift */; };
 		0941BC2422288B1F00603286 /* Lens.json in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC2322288B1F00603286 /* Lens.json */; };
 		096CD064222AEF4D00946444 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CD063222AEF4D00946444 /* SettingsViewController.swift */; };
 		096CD066222AEF6700946444 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096CD065222AEF6700946444 /* SettingsViewController.storyboard */; };
@@ -37,6 +36,9 @@
 		096CD074222AFD3100946444 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CD073222AFD3100946444 /* NSMutableAttributedString+Extension.swift */; };
 		096CD078222AFDDC00946444 /* LensService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CD077222AFDDC00946444 /* LensService.swift */; };
 		096CD07A222AFDF400946444 /* InfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CD079222AFDF400946444 /* InfoService.swift */; };
+		09BCA15D222B09CF00C62941 /* CDLens+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA15C222B09CF00C62941 /* CDLens+CoreDataProperties.swift */; };
+		09BCA161222B0A1500C62941 /* CDLensCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA15F222B0A1500C62941 /* CDLensCategory+CoreDataProperties.swift */; };
+		09BCA162222B0A1500C62941 /* CDLensCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA160222B0A1500C62941 /* CDLensCategory+CoreDataClass.swift */; };
 		09C5B6532228DEC10058C776 /* LensDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5B6522228DEC10058C776 /* LensDetailViewController.swift */; };
 		09C5B6552228DEE60058C776 /* LensDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C5B6542228DEE60058C776 /* LensDetailViewController.storyboard */; };
 		09C5B6592228E2310058C776 /* LensDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5B6572228E2310058C776 /* LensDetailCell.swift */; };
@@ -64,7 +66,6 @@
 		0941BC0F222858E700603286 /* LenseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LenseCell.xib; sourceTree = "<group>"; };
 		0941BC1422285C8200603286 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLens+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0941BC2022288A6F00603286 /* CDLens+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLens+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0941BC2322288B1F00603286 /* Lens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lens.json; sourceTree = "<group>"; };
 		096CD063222AEF4D00946444 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		096CD065222AEF6700946444 /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
@@ -76,6 +77,9 @@
 		096CD073222AFD3100946444 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		096CD077222AFDDC00946444 /* LensService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensService.swift; sourceTree = "<group>"; };
 		096CD079222AFDF400946444 /* InfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoService.swift; sourceTree = "<group>"; };
+		09BCA15C222B09CF00C62941 /* CDLens+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLens+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		09BCA15F222B0A1500C62941 /* CDLensCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CDLensCategory+CoreDataProperties.swift"; path = "DesignLenses/Library/Models/CoreData/LensCategory/CDLensCategory+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		09BCA160222B0A1500C62941 /* CDLensCategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CDLensCategory+CoreDataClass.swift"; path = "DesignLenses/Library/Models/CoreData/LensCategory/CDLensCategory+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		09C5B6522228DEC10058C776 /* LensDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensDetailViewController.swift; sourceTree = "<group>"; };
 		09C5B6542228DEE60058C776 /* LensDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LensDetailViewController.storyboard; sourceTree = "<group>"; };
 		09C5B6572228E2310058C776 /* LensDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensDetailCell.swift; sourceTree = "<group>"; };
@@ -226,8 +230,8 @@
 		0941BC1E222889D500603286 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */,
-				0941BC2022288A6F00603286 /* CDLens+CoreDataProperties.swift */,
+				09BCA15E222B09F300C62941 /* Lens */,
+				096CD07F222B08D900946444 /* LensCategory */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -276,12 +280,31 @@
 			path = Lens;
 			sourceTree = "<group>";
 		};
+		096CD07F222B08D900946444 /* LensCategory */ = {
+			isa = PBXGroup;
+			children = (
+				09BCA160222B0A1500C62941 /* CDLensCategory+CoreDataClass.swift */,
+				09BCA15F222B0A1500C62941 /* CDLensCategory+CoreDataProperties.swift */,
+			);
+			name = LensCategory;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		09A7B66A2229BF75001CF2E5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				09C5B6562228E2210058C776 /* LensDetailCell */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		09BCA15E222B09F300C62941 /* Lens */ = {
+			isa = PBXGroup;
+			children = (
+				0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */,
+				09BCA15C222B09CF00C62941 /* CDLens+CoreDataProperties.swift */,
+			);
+			path = Lens;
 			sourceTree = "<group>";
 		};
 		09C5B6512228DEA70058C776 /* LensDetail */ = {
@@ -384,8 +407,10 @@
 				0941BC0022284F2200603286 /* ReusableCell.swift in Sources */,
 				096CD07A222AFDF400946444 /* InfoService.swift in Sources */,
 				0941BC1522285C8200603286 /* UIView+Extension.swift in Sources */,
+				09BCA161222B0A1500C62941 /* CDLensCategory+CoreDataProperties.swift in Sources */,
 				0941BC082228509800603286 /* UIWindow+Extension.swift in Sources */,
 				0941BBFE22284F0000603286 /* NibInitializable.swift in Sources */,
+				09BCA15D222B09CF00C62941 /* CDLens+CoreDataProperties.swift in Sources */,
 				0941BBF522284E8D00603286 /* Lense.swift in Sources */,
 				096CD064222AEF4D00946444 /* SettingsViewController.swift in Sources */,
 				0941BBDC22284E0C00603286 /* AppDelegate.swift in Sources */,
@@ -395,13 +420,13 @@
 				0941BC0A222850E100603286 /* Dependencies.swift in Sources */,
 				096CD070222AF9CD00946444 /* InfoViewController.swift in Sources */,
 				09C5B6532228DEC10058C776 /* LensDetailViewController.swift in Sources */,
+				09BCA162222B0A1500C62941 /* CDLensCategory+CoreDataClass.swift in Sources */,
 				096CD074222AFD3100946444 /* NSMutableAttributedString+Extension.swift in Sources */,
 				096CD078222AFDDC00946444 /* LensService.swift in Sources */,
 				0941BBFC22284EDE00603286 /* StoryboardInstantiatable.swift in Sources */,
 				0941BBF922284EB900603286 /* LensesListViewController.swift in Sources */,
 				09C5B6592228E2310058C776 /* LensDetailCell.swift in Sources */,
 				0941BC052228500300603286 /* PersistenceService.swift in Sources */,
-				0941BC2222288A6F00603286 /* CDLens+CoreDataProperties.swift in Sources */,
 				096CD06D222AF7D400946444 /* UIViewController+Extension.swift in Sources */,
 				096CD06A222AF17B00946444 /* SettingCell.swift in Sources */,
 				0941BBE422284E0C00603286 /* DesignLenses.xcdatamodeld in Sources */,

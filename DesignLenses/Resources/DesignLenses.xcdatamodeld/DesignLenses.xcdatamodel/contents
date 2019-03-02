@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Lens" representedClassName="CDLens" syncable="YES">
+    <entity name="Lens" representedClassName="CDLens" parentEntity="LensCategory" syncable="YES">
         <attribute name="identifier" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageName" attributeType="String" syncable="YES"/>
+        <attribute name="isFavorite" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="prompt" attributeType="String" syncable="YES"/>
         <attribute name="questions" attributeType="Transformable" syncable="YES"/>
+        <attribute name="quote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quoteAuthor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="category" maxCount="1" deletionRule="Nullify" destinationEntity="LensCategory" syncable="YES"/>
+    </entity>
+    <entity name="LensCategory" representedClassName="CDLensCategory" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Lens" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="Lens" positionX="-54" positionY="-9" width="128" height="180"/>
+        <element name="LensCategory" positionX="-54" positionY="18" width="128" height="75"/>
     </elements>
 </model>
