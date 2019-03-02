@@ -31,10 +31,22 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 		filterButton.tintColor = .black
 
 		navigationItem.rightBarButtonItem = filterButton
+
+		let settingsItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Settings"), style: .plain,
+										   target: self, action: #selector(showSettings))
+		settingsItem.tintColor = .black
+
+		navigationItem.leftBarButtonItem = settingsItem
 	}
 
 	@objc private func scrollToBottom() {
 		collectionView.scrollToItem(at: IndexPath(row: 9, section: 0), at: .top, animated: true)
+	}
+
+	@objc private func showSettings() {
+		let settingsController = SettingsViewController.instantiateFromStoryboard()
+
+		navigationController?.pushViewController(settingsController, animated: true)
 	}
 
 	private func prepareCollectionLayout() {

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fSX-kp-PHe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info View Controller-->
+        <scene sceneID="TfF-Jq-JWE">
+            <objects>
+                <viewController id="fSX-kp-PHe" customClass="InfoViewController" customModule="DesignLenses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a9z-cv-gOF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZ4-wo-QfX">
+                                <rect key="frame" x="16" y="58" width="343" height="609"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cq3-wW-7rx">
+                                <rect key="frame" x="16" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sAN-lc-eoi"/>
+                                    <constraint firstAttribute="width" constant="30" id="z79-Wa-18Y"/>
+                                </constraints>
+                                <state key="normal" image="CloseIcon"/>
+                                <connections>
+                                    <action selector="actionClose:" destination="fSX-kp-PHe" eventType="touchUpInside" id="sQy-RX-yw2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cq3-wW-7rx" firstAttribute="top" secondItem="Wfl-iR-int" secondAttribute="top" id="5vi-y3-fpX"/>
+                            <constraint firstAttribute="bottom" secondItem="qZ4-wo-QfX" secondAttribute="bottom" id="Gsh-zB-c7w"/>
+                            <constraint firstItem="Cq3-wW-7rx" firstAttribute="leading" secondItem="Wfl-iR-int" secondAttribute="leading" constant="16" id="f2c-YL-Plm"/>
+                            <constraint firstItem="Wfl-iR-int" firstAttribute="trailing" secondItem="qZ4-wo-QfX" secondAttribute="trailing" constant="16" id="frn-7t-g7I"/>
+                            <constraint firstItem="qZ4-wo-QfX" firstAttribute="leading" secondItem="Wfl-iR-int" secondAttribute="leading" constant="16" id="ntC-g8-Lic"/>
+                            <constraint firstItem="qZ4-wo-QfX" firstAttribute="top" secondItem="Cq3-wW-7rx" secondAttribute="bottom" constant="8" id="rDT-Fy-aIQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wfl-iR-int"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="qZ4-wo-QfX" id="NWd-yQ-kzP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="usm-s9-Lko" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CloseIcon" width="153.60000610351562" height="153.60000610351562"/>
+    </resources>
+</document>
