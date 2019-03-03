@@ -119,7 +119,7 @@
 				"How can I change game elements to improve the experience?"
 			],
 			"title": "Holographic Design",
-			"imageName": "Emotion",
+			"imageName": "HolographicDesign",
 			"isFavorite": false
 		},
 		{
@@ -130,7 +130,7 @@
 				"Am I using every means possible to reinforce that theme?",
 			],
 			"title": "Unification",
-			"imageName": "Emotion",
+			"imageName": "Unification",
 			"isFavorite": false
 		},
 		{
@@ -156,7 +156,7 @@
 			"quote": "When you know how to listen, everybody is the guru.",
 			"quoteAuthor": "Ram Dass",
 			"title": "Infinite Inpsiration",
-			"imageName": "Emotion",
+			"imageName": "InfiniteInpsiration",
 			"isFavorite": false
 		},
 		{
@@ -169,7 +169,7 @@
 				"How will I be able to tell if the problem is solved?"
 			],
 			"title": "Problem Statement",
-			"imageName": "Emotion",
+			"imageName": "ProblemStatement",
 			"isFavorite": false
 		},
 		{
@@ -186,7 +186,7 @@
 				"Do the play-testers enjoy this game enough?"
 			],
 			"title": "Eight Filters",
-			"imageName": "Emotion",
+			"imageName": "EightFilters",
 			"isFavorite": false
 		},
 		{
@@ -198,8 +198,8 @@
 			],
 			"quote": "Because the sage always confronts difficulties, he never experiences them.",
 			"quoteAuthor": "Tao Te Ching",
-			"title": "Risk Mitigation",
-			"imageName": "Emotion",
+			"title": "RiskMitigation",
+			"imageName": "RiskMitigation",
 			"isFavorite": false
 		},
 		{
@@ -222,7 +222,7 @@
 				"If the passion isn't coming back, shouldn't I be doing something else?"
 			],
 			"title": "Passion",
-			"imageName": "Emotion",
+			"imageName": "Passion",
 			"isFavorite": false
 		},
 		{
@@ -261,7 +261,7 @@
 				"What pleasures are missing from your experience? Why? Can they be added?"
 			],
 			"title": "Pleasure",
-			"imageName": "Emotion",
+			"imageName": "Pleasure",
 			"isFavorite": false
 		},
 		{
@@ -287,7 +287,7 @@
 				"Which motivations are in conflict?"
 			],
 			"title": "Motivation",
-			"imageName": "Emotion",
+			"imageName": "Motivation",
 			"isFavorite": false
 		},
 		{
@@ -343,7 +343,7 @@
 				"Is there more than one useful way to abstractly model the space of this game?"
 			],
 			"title": "Functional Space",
-			"imageName": "Emotion",
+			"imageName": "FunctionalSpace",
 			"isFavorite": false
 		},
 		{
@@ -359,7 +359,7 @@
 				"Would changing who knows what state improve my game in some way?"
 			],
 			"title": "State Machine",
-			"imageName": "Emotion",
+			"imageName": "StateMachine",
 			"isFavorite": false
 		},
 		{
@@ -372,7 +372,7 @@
 				"Would changing who knows what improve my game in some way?"
 			],
 			"title": "Secrets",
-			"imageName": "Emotion",
+			"imageName": "Secrets",
 			"isFavorite": false
 		},
 		{
@@ -386,7 +386,7 @@
 				"How do side effects change constraints?"
 			],
 			"title": "Emergence",
-			"imageName": "Emotion",
+			"imageName": "Emergence",
 			"isFavorite": false
 		},
 		{
@@ -400,7 +400,7 @@
 				"What actions do players with they could do in my game that they cannot? Can I somehow enable these, either as operational or resultant actions?"
 			],
 			"title": "Action",
-			"imageName": "Emotion",
+			"imageName": "Action",
 			"isFavorite": false
 		},
 		{
@@ -416,7 +416,7 @@
 				"Do players have a chance to decide on their own goals?"
 			],
 			"title": "Goals",
-			"imageName": "Emotion",
+			"imageName": "Goals",
 			"isFavorite": false
 		},
 		{
@@ -430,7 +430,7 @@
 				"Are the rules easy to understand, or is there confusion about them? If there is confusion, should I fix it by changing the rules or by explaining them more clearly?"
 			],
 			"title": "Rules",
-			"imageName": "Emotion",
+			"imageName": "Rules",
 			"isFavorite": false
 		},
 		{
@@ -446,7 +446,7 @@
 				"Does this game demand the right level of skill?"
 			],
 			"title": "Skill",
-			"imageName": "Emotion",
+			"imageName": "Skill",
 			"isFavorite": false
 		},
 		{
@@ -459,7 +459,7 @@
 				"Each action a player can take has a different expected value when I add up all the possible outcomes. Am I happy with these values? Do they give players interesting choices? Are they too rewarding, or too punishing?"
 			],
 			"title": "Expected Value",
-			"imageName": "Emotion",
+			"imageName": "ExpectedValue",
 			"isFavorite": false
 		},
 		{
@@ -473,7 +473,7 @@
 				"What is the relationship between chance and skill in my game? Are there ways I can make random elements feel more like the exercise of a skill? Are there ways I can make exercising skills feel more like risk-taking?"
 			],
 			"title": "Chance",
-			"imageName": "Emotion",
+			"imageName": "Chance",
 			"isFavorite": false
 		},
 		{
@@ -486,7 +486,7 @@
 				"If I want players of different skill levels to play together, what means will I use to make the game interesting and challenging for everyone?"
 			],
 			"title": "Fairness",
-			"imageName": "Emotion",
+			"imageName": "Fairness",
 			"isFavorite": false
 		},
 		{
@@ -501,7 +501,7 @@
 				"What is the maximum level of challenge in my game?\n(What percentage of players do I want to finish my game?)"
 			],
 			"title": "Challenge",
-			"imageName": "Emotion",
+			"imageName": "Challenge",
 			"isFavorite": false
 		},
 		{
@@ -514,7 +514,7 @@
 				"Are there any dominant strategies in my game?"
 			],
 			"title": "Meaningful Choices",
-			"imageName": "Emotion",
+			"imageName": "MeaningfulChoices",
 			"isFavorite": false
 		},
 		{
@@ -525,7 +525,7 @@
 				"Is my attempt at triangularity balanced? That is, are the rewards commensurate with the risks?"
 			],
 			"title": "Triangularity",
-			"imageName": "Emotion",
+			"imageName": "Triangularity",
 			"isFavorite": false
 		},
 		{
@@ -537,7 +537,7 @@
 				"Do parts of my game feel too random? If so, will replacing elements of chance with elements of skill or strategy make the players feel more in control?"
 			],
 			"title": "Skill vs. Chance",
-			"imageName": "Emotion",
+			"imageName": "Skill&Chance",
 			"isFavorite": false
 		},
 		{
@@ -566,7 +566,7 @@
 				"Can experts generally be sure they will defeat novices?"
 			],
 			"title": "Competition",
-			"imageName": "Emotion",
+			"imageName": "Competition",
 			"isFavorite": false
 		},
 		{
@@ -622,7 +622,7 @@
 				"Are my strong punishments balanced against commensurately strong rewards?"
 			],
 			"title": "The Punishment",
-			"imageName": "Emotion",
+			"imageName": "Punishment",
 			"isFavorite": false
 		},
 		{
@@ -689,7 +689,7 @@
 				"Is a universal currency a good idea in my game, or should there be specialized currencies?"
 			],
 			"title": "Economy",
-			"imageName": "Emotion",
+			"imageName": "Economy",
 			"isFavorite": false
 		},
 		{
@@ -747,7 +747,7 @@
 				"Is the challenge at the top of my pyramid interesting, compelling, and clear? Does it make people want to work in order to get to it?"
 			],
 			"title": "The Pyramid",
-			"imageName": "Emotion",
+			"imageName": "Pyramid",
 			"isFavorite": false
 		},
 		{
@@ -760,7 +760,7 @@
 				"Do I have any incongruous puzzles? How can I better integrate them into the game?"
 			],
 			"title": "The Puzzle",
-			"imageName": "Emotion",
+			"imageName": "Puzzle",
 			"isFavorite": false
 		},
 		{
@@ -773,7 +773,7 @@
 				"Feeling powerful = feeling in control. Do your players feel powerful? Can you make them feel more powerful somehow?"
 			],
 			"title": "Control",
-			"imageName": "Emotion",
+			"imageName": "Control",
 			"isFavorite": false
 		},
 		{
@@ -1099,7 +1099,7 @@
 				"What does my player fantasize about doing there?"
 			],
 			"title": "Fantasy",
-			"imageName": "Emotion",
+			"imageName": "Fantasy",
 			"isFavorite": false
 		},
 		{

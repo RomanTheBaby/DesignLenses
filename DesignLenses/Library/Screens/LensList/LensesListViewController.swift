@@ -40,7 +40,7 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 	}
 
 	@objc private func scrollToBottom() {
-		collectionView.scrollToItem(at: IndexPath(row: 9, section: 0), at: .top, animated: true)
+		collectionView.scrollToItem(at: IndexPath(row: 40, section: 0), at: .top, animated: true)
 	}
 
 	@objc private func showSettings() {
