@@ -1,24 +1,25 @@
 //
-//  LenseCell.swift
+//  LensCell.swift
 //  DesignLenses
 //
-//  Created by Baby on 2/28/19.
+//  Created by Baby on 3/4/19.
 //  Copyright © 2019 baby. All rights reserved.
 //
 
 import UIKit
 
-final class LenseCell: UICollectionViewCell, NibInitializable, ReusableCell {
+class LensCell: UICollectionViewCell, NibInitializable, ReusableCell {
 
 	static let ImageAspectRation: CGFloat = 9/16
 	static let BottomContainerHeight: CGFloat = 50
 
 	@IBOutlet weak private var nameLabel: UILabel!
 	@IBOutlet weak private var imageView: UIImageView!
-	@IBOutlet weak private var favoriteButton: UIButton!
+	@IBOutlet weak private(set) var favoriteButton: LensLikeButton!
 	@IBOutlet weak private var contentContainerView: UIView!
 
 	private var hasShadow = false
+
 	override func layoutSubviews() {
 		super.layoutSubviews()
 
@@ -30,6 +31,7 @@ final class LenseCell: UICollectionViewCell, NibInitializable, ReusableCell {
 	}
 
 	func render(_ lens: Lens) {
+		favoriteButton.lens = lens
 		nameLabel.text = lens.title
 
 		imageView.image = #imageLiteral(resourceName: lens.imageName)

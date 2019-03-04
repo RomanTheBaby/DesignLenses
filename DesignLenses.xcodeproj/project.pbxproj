@@ -20,8 +20,6 @@
 		0941BC082228509800603286 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC072228509800603286 /* UIWindow+Extension.swift */; };
 		0941BC0A222850E100603286 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC09222850E100603286 /* Dependencies.swift */; };
 		0941BC0C2228578C00603286 /* LensesListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC0B2228578C00603286 /* LensesListViewController.storyboard */; };
-		0941BC10222858E700603286 /* LenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC0E222858E700603286 /* LenseCell.swift */; };
-		0941BC11222858E700603286 /* LenseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC0F222858E700603286 /* LenseCell.xib */; };
 		0941BC1522285C8200603286 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC1422285C8200603286 /* UIView+Extension.swift */; };
 		0941BC2122288A6F00603286 /* CDLens+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */; };
 		0941BC2422288B1F00603286 /* Lens.json in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC2322288B1F00603286 /* Lens.json */; };
@@ -42,6 +40,9 @@
 		09C5B65A2228E2310058C776 /* LensDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09C5B6582228E2310058C776 /* LensDetailCell.xib */; };
 		09CBF493222D9BD900E63AEF /* LensCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CBF492222D9BD900E63AEF /* LensCategory.swift */; };
 		09CBF495222D9CA600E63AEF /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CBF494222D9CA600E63AEF /* Lens.swift */; };
+		09CBF499222DC7DB00E63AEF /* LensCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CBF497222DC7DB00E63AEF /* LensCell.swift */; };
+		09CBF49A222DC7DB00E63AEF /* LensCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09CBF498222DC7DB00E63AEF /* LensCell.xib */; };
+		09CBF49E222DC95000E63AEF /* LensLikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CBF49D222DC95000E63AEF /* LensLikeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,8 +61,6 @@
 		0941BC072228509800603286 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		0941BC09222850E100603286 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		0941BC0B2228578C00603286 /* LensesListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LensesListViewController.storyboard; sourceTree = "<group>"; };
-		0941BC0E222858E700603286 /* LenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LenseCell.swift; sourceTree = "<group>"; };
-		0941BC0F222858E700603286 /* LenseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LenseCell.xib; sourceTree = "<group>"; };
 		0941BC1422285C8200603286 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLens+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0941BC2322288B1F00603286 /* Lens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lens.json; sourceTree = "<group>"; };
@@ -82,6 +81,9 @@
 		09C5B6582228E2310058C776 /* LensDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LensDetailCell.xib; sourceTree = "<group>"; };
 		09CBF492222D9BD900E63AEF /* LensCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensCategory.swift; sourceTree = "<group>"; };
 		09CBF494222D9CA600E63AEF /* Lens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lens.swift; sourceTree = "<group>"; };
+		09CBF497222DC7DB00E63AEF /* LensCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensCell.swift; sourceTree = "<group>"; };
+		09CBF498222DC7DB00E63AEF /* LensCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LensCell.xib; sourceTree = "<group>"; };
+		09CBF49D222DC95000E63AEF /* LensLikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensLikeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		0941BBF222284E3100603286 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				09CBF49B222DC93800E63AEF /* Views */,
 				0941BC062228509000603286 /* Extensions */,
 				0941BBFA22284ED600603286 /* Protocols */,
 				0941BC0322284FFD00603286 /* Services */,
@@ -178,7 +181,7 @@
 		0941BBF722284EA700603286 /* LensList */ = {
 			isa = PBXGroup;
 			children = (
-				0941BC0D222858D100603286 /* LenseCell */,
+				09CBF496222DC7C800E63AEF /* LensCell */,
 				0941BBF822284EB900603286 /* LensesListViewController.swift */,
 				0941BC0B2228578C00603286 /* LensesListViewController.storyboard */,
 			);
@@ -215,15 +218,6 @@
 				096CD073222AFD3100946444 /* NSMutableAttributedString+Extension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		0941BC0D222858D100603286 /* LenseCell */ = {
-			isa = PBXGroup;
-			children = (
-				0941BC0E222858E700603286 /* LenseCell.swift */,
-				0941BC0F222858E700603286 /* LenseCell.xib */,
-			);
-			path = LenseCell;
 			sourceTree = "<group>";
 		};
 		0941BC1E222889D500603286 /* CoreData */ = {
@@ -314,6 +308,31 @@
 			path = LensDetailCell;
 			sourceTree = "<group>";
 		};
+		09CBF496222DC7C800E63AEF /* LensCell */ = {
+			isa = PBXGroup;
+			children = (
+				09CBF497222DC7DB00E63AEF /* LensCell.swift */,
+				09CBF498222DC7DB00E63AEF /* LensCell.xib */,
+			);
+			path = LensCell;
+			sourceTree = "<group>";
+		};
+		09CBF49B222DC93800E63AEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09CBF49C222DC93D00E63AEF /* LensLikeButton */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		09CBF49C222DC93D00E63AEF /* LensLikeButton */ = {
+			isa = PBXGroup;
+			children = (
+				09CBF49D222DC95000E63AEF /* LensLikeButton.swift */,
+			);
+			path = LensLikeButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -376,11 +395,11 @@
 				0941BC2422288B1F00603286 /* Lens.json in Resources */,
 				0941BC0C2228578C00603286 /* LensesListViewController.storyboard in Resources */,
 				096CD072222AFA5700946444 /* InfoViewController.storyboard in Resources */,
-				0941BC11222858E700603286 /* LenseCell.xib in Resources */,
 				096CD06B222AF17B00946444 /* SettingCell.xib in Resources */,
 				0941BBE922284E0D00603286 /* LaunchScreen.storyboard in Resources */,
 				09C5B65A2228E2310058C776 /* LensDetailCell.xib in Resources */,
 				09C5B6552228DEE60058C776 /* LensDetailViewController.storyboard in Resources */,
+				09CBF49A222DC7DB00E63AEF /* LensCell.xib in Resources */,
 				0941BBE622284E0D00603286 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,11 +417,11 @@
 				0941BC082228509800603286 /* UIWindow+Extension.swift in Sources */,
 				0941BBFE22284F0000603286 /* NibInitializable.swift in Sources */,
 				09BCA15D222B09CF00C62941 /* CDLens+CoreDataProperties.swift in Sources */,
+				09CBF49E222DC95000E63AEF /* LensLikeButton.swift in Sources */,
 				09CBF493222D9BD900E63AEF /* LensCategory.swift in Sources */,
 				096CD064222AEF4D00946444 /* SettingsViewController.swift in Sources */,
 				0941BBDC22284E0C00603286 /* AppDelegate.swift in Sources */,
 				0941BC2122288A6F00603286 /* CDLens+CoreDataClass.swift in Sources */,
-				0941BC10222858E700603286 /* LenseCell.swift in Sources */,
 				0941BC0222284F8600603286 /* AppCoordinator.swift in Sources */,
 				0941BC0A222850E100603286 /* Dependencies.swift in Sources */,
 				096CD070222AF9CD00946444 /* InfoViewController.swift in Sources */,
@@ -413,6 +432,7 @@
 				09CBF495222D9CA600E63AEF /* Lens.swift in Sources */,
 				0941BBF922284EB900603286 /* LensesListViewController.swift in Sources */,
 				09C5B6592228E2310058C776 /* LensDetailCell.swift in Sources */,
+				09CBF499222DC7DB00E63AEF /* LensCell.swift in Sources */,
 				0941BC052228500300603286 /* PersistenceService.swift in Sources */,
 				096CD06D222AF7D400946444 /* UIViewController+Extension.swift in Sources */,
 				096CD06A222AF17B00946444 /* SettingCell.swift in Sources */,

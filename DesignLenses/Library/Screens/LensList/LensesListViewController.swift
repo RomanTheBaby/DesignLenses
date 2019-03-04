@@ -22,7 +22,7 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 
 		prepareCollectionLayout()
 		prepareNavigationControls()
-		loadCards()
+		safelyLoadLenses()
     }
 
 	private func prepareNavigationControls() {
@@ -54,19 +54,22 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 		layout.minimumLineSpacing = Constants.LensesInheritemSpacing
 
 		let width = UIScreen.main.bounds.width - (Constants.Offset * 2)
-		let height = (width * LenseCell.ImageAspectRation) + LenseCell.BottomContainerHeight
+		let height = (width * LensCell.ImageAspectRation) + LensCell.BottomContainerHeight
 		layout.itemSize = CGSize(width: width, height: height)
 
 		collectionView.collectionViewLayout = layout
-		collectionView.register(cell: LenseCell.self)
+		collectionView.register(cell: LensCell.self)
 	}
 
-	private func loadCards(with filter: LensService.FilterType = .none) {
+	private func safelyLoadLenses(with filter: LensService.FilterType = .none) {
 		guard lensService.willChange(with: filter) else { return }
+		fetchLenses(filterType: filter)
+	}
 
-		title = filter.description
+	private func fetchLenses(filterType: LensService.FilterType) {
+		title = filterType.description
 
-		lenses = lensService.filter(by: filter)
+		lenses = lensService.filter(by: filterType)
 		collectionView.reloadData()
 
 		guard !lenses.isEmpty else { return }
@@ -94,35 +97,40 @@ extension LensesListViewController {
 		let alertController = UIAlertController(title: "Choose filter type:", message: nil, preferredStyle: .actionSheet)
 		let filter = lensService.currentFilter
 		let actionNone = UIAlertAction( title: "None \(filter == .none ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
-			self?.loadCards()
+			self?.safelyLoadLenses()
 		}
 
 		let actionName = UIAlertAction(title: "Name \(filter == .name ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
-			self?.loadCards(with: .name)
+			self?.safelyLoadLenses(with: .name)
+		}
+
+		let actionFavorite = UIAlertAction(title: "Favorite \(filter == .favorite ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
+			self?.safelyLoadLenses(with: .favorite)
 		}
 
 		let actionDesigner = UIAlertAction(title: "Category: Designer \(filter == .category(.designer) ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
-			self?.loadCards(with: .category(.designer))
+			self?.safelyLoadLenses(with: .category(.designer))
 		}
 
 		let actionPlayer = UIAlertAction( title: "Category: Player \(filter == .category(.player) ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
-			self?.loadCards(with: .category(.player))
+			self?.safelyLoadLenses(with: .category(.player))
 		}
 
 		let actionExperience = UIAlertAction(title: "Category: Experience \(filter == .category(.experience) ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
-			self?.loadCards(with: .category(.experience))
+			self?.safelyLoadLenses(with: .category(.experience))
 		}
 
 		let actionProcess = UIAlertAction(title: "Category: Process \(filter == .category(.process) ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
-			self?.loadCards(with: .category(.process))
+			self?.safelyLoadLenses(with: .category(.process))
 		}
 
 		let actionGame = UIAlertAction(title: "Category: Game \(filter == .category(.game) ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
-			self?.loadCards(with: .category(.game))
+			self?.safelyLoadLenses(with: .category(.game))
 		}
 
 		alertController.addAction(actionNone)
 		alertController.addAction(actionName)
+		alertController.addAction(actionFavorite)
 		alertController.addAction(actionDesigner)
 		alertController.addAction(actionPlayer)
 		alertController.addAction(actionExperience)
@@ -131,6 +139,13 @@ extension LensesListViewController {
 
 		alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
 		present(alertController, animated: true, completion: nil)
+	}
+
+	@objc private func lensFavoriteButtonTap(_ button: LensLikeButton) {
+		guard var lens = button.lens else { return }
+		lens.isFavorite = !lens.isFavorite
+		lensService.update(lens: lens)
+		fetchLenses(filterType: lensService.currentFilter)
 	}
 }
 
@@ -142,11 +157,14 @@ extension LensesListViewController: UICollectionViewDataSource {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withType: LenseCell.self, forItemAt: indexPath)
+		let cell = collectionView.dequeueReusableCell(withType: LensCell.self, forItemAt: indexPath)
+		cell.favoriteButton.addTarget(self, action: #selector(lensFavoriteButtonTap(_:)), for: .touchUpInside)
 		cell.render(lenses[indexPath.row])
 		return cell
 	}
 }
+
+// MARK: - UICollectionViewDelegate
 
 extension LensesListViewController: UICollectionViewDelegate {
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

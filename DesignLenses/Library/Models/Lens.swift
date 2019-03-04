@@ -14,7 +14,7 @@ struct Lens: Decodable {
 	let prompt: String
 	let imageName: String
 	let questions: [String]
-	let isFavorite: Bool
+	var isFavorite: Bool
 
 	let quote: String?
 	let quoteAuthor: String?
