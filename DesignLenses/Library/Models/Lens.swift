@@ -19,11 +19,11 @@ struct Lens: Decodable {
 	let quote: String?
 	let quoteAuthor: String?
 
-	let categoryId: Int16
+	let categoriesIds: [Int]
 }
 
 extension Lens {
-	var category: LensCategory {
-		return LensCategory(rawValue: Int(categoryId))!
+	var categories: [LensCategory] {
+		return categoriesIds.compactMap { LensCategory(rawValue: $0) }
 	}
 }

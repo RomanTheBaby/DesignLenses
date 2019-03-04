@@ -12,7 +12,7 @@
 			"quoteAuthor": "Maya Angelou",
 			"title": "Emotion",
 			"imageName": "Emotion",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -25,7 +25,7 @@
 			],
 			"title": "Essential Experience",
 			"imageName": "Experience",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -38,7 +38,7 @@
 			],
 			"title": "Venue",
 			"imageName": "Venue",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -52,7 +52,7 @@
 			],
 			"title": "Surprise",
 			"imageName": "Surprise",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -64,7 +64,7 @@
 			],
 			"title": "Fun",
 			"imageName": "Fun",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -77,7 +77,7 @@
 			],
 			"title": "Curiosity",
 			"imageName": "Curiosity",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -90,7 +90,7 @@
 			],
 			"title": "Endogenous Value",
 			"imageName": "Endogenous",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -103,7 +103,7 @@
 			],
 			"title": "Problem Solving",
 			"imageName": "Rubik",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -114,9 +114,9 @@
 				"Could my design be improved by enhancing elements in one or more of the categories?",
 				"Are the four elements in harmony, reinforcing each other, and working toward a common theme?"
 			],
-			"title": "Elemental Tetrad",
+			"title": "The Elemental Tetrad",
 			"imageName": "Tetrad",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -129,7 +129,7 @@
 			],
 			"title": "Holographic Design",
 			"imageName": "HolographicDesign",
-			"categoryId": 2,
+			"categoriesIds": [2],
 			"isFavorite": false
 		},
 		{
@@ -141,7 +141,7 @@
 			],
 			"title": "Unification",
 			"imageName": "Unification",
-			"categoryId": 2,
+			"categoriesIds": [2],
 			"isFavorite": false
 		},
 		{
@@ -155,7 +155,7 @@
 			],
 			"title": "Resonance",
 			"imageName": "Resonance",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -169,7 +169,7 @@
 			"quoteAuthor": "Ram Dass",
 			"title": "Infinite Inpsiration",
 			"imageName": "InfiniteInpsiration",
-			"categoryId": 2,
+			"categoriesIds": [2],
 			"isFavorite": false
 		},
 		{
@@ -181,9 +181,9 @@
 				"Is a game really the best solution? Why?",
 				"How will I be able to tell if the problem is solved?"
 			],
-			"title": "Problem Statement",
+			"title": "The Problem Statement",
 			"imageName": "ProblemStatement",
-			"categoryId": 2,
+			"categoriesIds": [2],
 			"isFavorite": false
 		},
 		{
@@ -201,7 +201,7 @@
 			],
 			"title": "Eight Filters",
 			"imageName": "EightFilters",
-			"categoryId": 2,
+			"categoriesIds": [2],
 			"isFavorite": false
 		},
 		{
@@ -213,9 +213,9 @@
 			],
 			"quote": "Because the sage always confronts difficulties, he never experiences them.",
 			"quoteAuthor": "Tao Te Ching",
-			"title": "RiskMitigation",
+			"title": "Risk Mitigation",
 			"imageName": "RiskMitigation",
-			"categoryId": 2,
+			"categoriesIds": [2],
 			"isFavorite": false
 		},
 		{
@@ -227,7 +227,7 @@
 			],
 			"title": "The Toy",
 			"imageName": "Toy",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -240,7 +240,7 @@
 			],
 			"title": "Passion",
 			"imageName": "Passion",
-			"categoryId": 1,
+			"categoriesIds": [1],
 			"isFavorite": false
 		},
 		{
@@ -255,7 +255,7 @@
 			],
 			"title": "The Player",
 			"imageName": "Player",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -270,7 +270,7 @@
 			],
 			"title": "Flow",
 			"imageName": "Flow",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -282,7 +282,7 @@
 			],
 			"title": "Pleasure",
 			"imageName": "Pleasure",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -295,7 +295,7 @@
 			],
 			"title": "Needs",
 			"imageName": "Needs",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -310,7 +310,7 @@
 			],
 			"title": "Motivation",
 			"imageName": "Motivation",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -326,7 +326,7 @@
 			"quoteAuthor": "Scotty Meltzer",
 			"title": "Novelty",
 			"imageName": "Novelty",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -340,7 +340,7 @@
 			],
 			"title": "Judgment",
 			"imageName": "Judgment",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -355,7 +355,7 @@
 			],
 			"title": "Time",
 			"imageName": "Time",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -370,7 +370,7 @@
 			],
 			"title": "Functional Space",
 			"imageName": "FunctionalSpace",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -385,9 +385,9 @@
 				"What state is known by some, or only one player?",
 				"Would changing who knows what state improve my game in some way?"
 			],
-			"title": "State Machine",
+			"title": "The State Machine",
 			"imageName": "StateMachine",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -401,7 +401,7 @@
 			],
 			"title": "Secrets",
 			"imageName": "Secrets",
-			"categoryId": 0,
+			"categoriesIds": [0, 4],
 			"isFavorite": false
 		},
 		{
@@ -416,7 +416,7 @@
 			],
 			"title": "Emergence",
 			"imageName": "Emergence",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -431,7 +431,7 @@
 			],
 			"title": "Action",
 			"imageName": "Action",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -448,7 +448,7 @@
 			],
 			"title": "Goals",
 			"imageName": "Goals",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -463,7 +463,7 @@
 			],
 			"title": "Rules",
 			"imageName": "Rules",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -480,7 +480,7 @@
 			],
 			"title": "Skill",
 			"imageName": "Skill",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -494,7 +494,7 @@
 			],
 			"title": "Expected Value",
 			"imageName": "ExpectedValue",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -509,7 +509,7 @@
 			],
 			"title": "Chance",
 			"imageName": "Chance",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -523,7 +523,7 @@
 			],
 			"title": "Fairness",
 			"imageName": "Fairness",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -539,7 +539,7 @@
 			],
 			"title": "Challenge",
 			"imageName": "Challenge",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -553,7 +553,7 @@
 			],
 			"title": "Meaningful Choices",
 			"imageName": "MeaningfulChoices",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -565,7 +565,7 @@
 			],
 			"title": "Triangularity",
 			"imageName": "Triangularity",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -578,7 +578,7 @@
 			],
 			"title": "Skill vs. Chance",
 			"imageName": "Skill&Chance",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -593,7 +593,7 @@
 			],
 			"title": "Head and Hands",
 			"imageName": "HeadHands",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -609,7 +609,7 @@
 			],
 			"title": "Competition",
 			"imageName": "Competition",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -625,7 +625,7 @@
 			],
 			"title": "Cooperation",
 			"imageName": "Cooperation",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -639,7 +639,7 @@
 			],
 			"title": "Competition vs. Cooperation",
 			"imageName": "CompetitionCooperation",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -654,7 +654,7 @@
 			],
 			"title": "Reward",
 			"imageName": "Reward",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -669,7 +669,7 @@
 			],
 			"title": "The Punishment",
 			"imageName": "Punishment",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -683,7 +683,7 @@
 			],
 			"title": "Simplicity/Complexity",
 			"imageName": "SimplicityComplexity",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -697,7 +697,7 @@
 			],
 			"title": "Elegance",
 			"imageName": "Elegance",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -710,7 +710,7 @@
 			],
 			"title": "Character",
 			"imageName": "Character",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -727,7 +727,7 @@
 			],
 			"title": "Imagination",
 			"imageName": "Imagination",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -741,7 +741,7 @@
 			],
 			"title": "Economy",
 			"imageName": "Economy",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -752,7 +752,7 @@
 			],
 			"title": "Balance",
 			"imageName": "Balance",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -765,7 +765,7 @@
 			],
 			"title": "Accessibility",
 			"imageName": "Accessibility",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -778,7 +778,7 @@
 			],
 			"title": "Visible Progress",
 			"imageName": "Progress",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -791,7 +791,7 @@
 			],
 			"title": "Parallelism",
 			"imageName": "Parallelism",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -804,7 +804,7 @@
 			],
 			"title": "The Pyramid",
 			"imageName": "Pyramid",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -818,7 +818,7 @@
 			],
 			"title": "The Puzzle",
 			"imageName": "Puzzle",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -832,7 +832,7 @@
 			],
 			"title": "Control",
 			"imageName": "Control",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -847,7 +847,7 @@
 			],
 			"title": "Physical Interface",
 			"imageName": "Physical",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -862,7 +862,7 @@
 			],
 			"title": "Virtual Interface",
 			"imageName": "Virtual",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -879,7 +879,7 @@
 			],
 			"title": "Transparency",
 			"imageName": "Transparency",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -894,7 +894,7 @@
 			],
 			"title": "Feedback",
 			"imageName": "Feedback",
-			"categoryId": 3,
+			"categoriesIds": [3, 4],
 			"isFavorite": false
 		},
 		{
@@ -907,7 +907,7 @@
 			],
 			"title": "Juiciness",
 			"imageName": "Juiciness",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -919,7 +919,7 @@
 			],
 			"title": "Primality",
 			"imageName": "Primality",
-			"categoryId": 3,
+			"categoriesIds": [3, 4],
 			"isFavorite": false
 		},
 		{
@@ -935,7 +935,7 @@
 			],
 			"title": "Channels and Dimensions",
 			"imageName": "ChannelsDimensions",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -949,7 +949,7 @@
 			],
 			"title": "Modes",
 			"imageName": "Modes",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -961,7 +961,7 @@
 			],
 			"title": "Moments",
 			"imageName": "Moments",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -978,7 +978,7 @@
 			],
 			"title": "Interest Curve",
 			"imageName": "InterestCurve",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -993,7 +993,7 @@
 				],
 			"title": "Inherent Interest",
 			"imageName": "InherentInterest",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1006,7 +1006,7 @@
 			],
 			"title": "Beauty",
 			"imageName": "Beauty",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1023,7 +1023,7 @@
 			],
 			"title": "Projection",
 			"imageName": "Projection",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1038,7 +1038,7 @@
 			],
 			"title": "Story Machine",
 			"imageName": "StoryMachine",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1054,7 +1054,7 @@
 			],
 			"title": "Obstacle",
 			"imageName": "Obstacle",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1067,7 +1067,7 @@
 			],
 			"title": "Simplicity and Transcendence",
 			"imageName": "SimplicityTranscendence",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1079,9 +1079,9 @@
 				"Would my story be improved by including more archetypical elements?",
 				"Does my story match this form so closely that it feels hackneyed?"
 			],
-			"title": "Hero's Journey",
+			"title": "The Hero's Journey",
 			"imageName": "Journey",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1095,7 +1095,7 @@
 			],
 			"title": "The Weirdest Thing",
 			"imageName": "WeirdestThing",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1110,7 +1110,7 @@
 			],
 			"title": "Story",
 			"imageName": "Story",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1124,7 +1124,7 @@
 			],
 			"title": "Freedom",
 			"imageName": "Freedom",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1138,7 +1138,7 @@
 			],
 			"title": "Help",
 			"imageName": "Help",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1157,7 +1157,7 @@
 			],
 			"title": "Indirect Control",
 			"imageName": "IndirectControl",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -1169,7 +1169,7 @@
 			],
 			"title": "Collusion",
 			"imageName": "Collusion",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -1182,7 +1182,7 @@
 			],
 			"title": "Fantasy",
 			"imageName": "Fantasy",
-			"categoryId": 0,
+			"categoriesIds": [0, 3],
 			"isFavorite": false
 		},
 		{
@@ -1195,7 +1195,7 @@
 			],
 			"title": "The World",
 			"imageName": "World",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -1207,7 +1207,7 @@
 			],
 			"title": "The Avatar",
 			"imageName": "Avatar",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -1223,7 +1223,7 @@
 			],
 			"title": "Character Function",
 			"imageName": "CharacterFunction",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -1235,7 +1235,7 @@
 			],
 			"title": "Character Traits",
 			"imageName": "Traits",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1248,7 +1248,7 @@
 			],
 			"title": "Interpersonal Circumplex",
 			"imageName": "InterpersonalCircumplex",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1261,7 +1261,7 @@
 			],
 			"title": "The Character Web",
 			"imageName": "CharacterWeb",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1276,7 +1276,7 @@
 			],
 			"title": "Status",
 			"imageName": "Status",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1291,7 +1291,7 @@
 			],
 			"title": "Character Transformation",
 			"imageName": "CharacterTransformation",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1305,7 +1305,7 @@
 			],
 			"title": "Inner Contradiction",
 			"imageName": "InnerContradiction",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1319,7 +1319,7 @@
 			],
 			"title": "The Nameless Quality",
 			"imageName": "NamelessQuality",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1331,7 +1331,7 @@
 			],
 			"title": "Atmosphere",
 			"imageName": "Atmosphere",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1343,7 +1343,7 @@
 			],
 			"title": "Spectation",
 			"imageName": "Spectation",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -1358,7 +1358,7 @@
 			],
 			"title": "Friendship",
 			"imageName": "Friendship",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1371,7 +1371,7 @@
 			],
 			"title": "Expression",
 			"imageName": "Expression",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -1386,7 +1386,7 @@
 			],
 			"title": "Community",
 			"imageName": "Community",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -1399,7 +1399,7 @@
 			],
 			"title": "Griefing",
 			"imageName": "Griefing",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -1411,7 +1411,7 @@
 			],
 			"title": "Love",
 			"imageName": "Love",
-			"categoryId": 1,
+			"categoriesIds": [1],
 			"isFavorite": false
 		},
 		{
@@ -1427,7 +1427,7 @@
 			],
 			"title": "The Team",
 			"imageName": "Team",
-			"categoryId": 1,
+			"categoriesIds": [1],
 			"isFavorite": false
 		},
 		{
@@ -1439,7 +1439,7 @@
 			],
 			"title": "Documentation",
 			"imageName": "Documentation",
-			"categoryId": 1,
+			"categoriesIds": [1, 3],
 			"isFavorite": false
 		},
 		{
@@ -1454,7 +1454,7 @@
 			],
 			"title": "Playtesting",
 			"imageName": "Playtesting",
-			"categoryId": 1,
+			"categoriesIds": [1, 3],
 			"isFavorite": false
 		},
 		{
@@ -1469,7 +1469,7 @@
 			],
 			"title": "Technology",
 			"imageName": "Technology",
-			"categoryId": 4,
+			"categoriesIds": [4],
 			"isFavorite": false
 		},
 		{
@@ -1480,9 +1480,9 @@
 				"What will ____ be like four years from now? Why?",
 				"What will ____ be like ten years from now? Why?"
 			],
-			"title": "Crystal Ball",
+			"title": "The Crystal Ball",
 			"imageName": "CrystalBall",
-			"categoryId": 0,
+			"categoriesIds": [0],
 			"isFavorite": false
 		},
 		{
@@ -1496,7 +1496,7 @@
 			],
 			"title": "Utopia",
 			"imageName": "Utopia",
-			"categoryId": 1,
+			"categoriesIds": [0, 1],
 			"isFavorite": false
 		},
 		{
@@ -1509,7 +1509,7 @@
 			],
 			"title": "The Client",
 			"imageName": "Client",
-			"categoryId": 1,
+			"categoriesIds": [1],
 			"isFavorite": false
 		},
 		{
@@ -1523,7 +1523,7 @@
 			],
 			"title": "The Pitch",
 			"imageName": "Pitch",
-			"categoryId": 1,
+			"categoriesIds": [1],
 			"isFavorite": false
 		},
 		{
@@ -1537,7 +1537,7 @@
 			],
 			"title": "Profit",
 			"imageName": "Profit",
-			"categoryId": 2,
+			"categoriesIds": [2],
 			"isFavorite": false
 		},
 		{
@@ -1549,7 +1549,7 @@
 			],
 			"title": "Transformation",
 			"imageName": "Transformation",
-			"categoryId": 3,
+			"categoriesIds": [3],
 			"isFavorite": false
 		},
 		{
@@ -1560,7 +1560,7 @@
 			],
 			"title": "Responsibility",
 			"imageName": "Responsibility",
-			"categoryId": 1,
+			"categoriesIds": [1],
 			"isFavorite": false
 		},
 		{
@@ -1569,9 +1569,9 @@
 			"questions": [
 				"Is making this game worth my time?"
 			],
-			"title": "Raven",
+			"title": "The Raven",
 			"imageName": "Raven",
-			"categoryId": 1,
+			"categoriesIds": [1],
 			"isFavorite": false
 		},
 		{
@@ -1582,7 +1582,7 @@
 			],
 			"title": "Your Secret Purpose",
 			"imageName": "Purpose",
-			"categoryId": 1,
+			"categoriesIds": [1],
 			"isFavorite": false
 		}
 	]

@@ -25,7 +25,7 @@ final class LensService {
 		case .name:
 			return fetchedLenses.sorted(by: { $0.title < $1.title })
 		case .category(let category):
-			return fetchedLenses.filter { $0.category == category }
+			return fetchedLenses.filter { $0.categories.contains(category) }
 		}
 	}
 

@@ -35,6 +35,6 @@ extension CDLens {
 					prompt: prompt, imageName: imageName,
 					questions: questions, isFavorite: isFavorite,
 					quote: quote, quoteAuthor: quoteAuthor,
-					categoryId: 0)
+					categoriesIds: [0])
 	}
 }

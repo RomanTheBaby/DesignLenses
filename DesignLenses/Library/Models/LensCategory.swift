@@ -10,8 +10,8 @@ import Foundation
 
 enum LensCategory: Int {
 	case experience = 0
-	case designer
-	case process
-	case player
-	case game
+	case designer = 1
+	case process = 2
+	case player = 3
+	case game = 4
 }
