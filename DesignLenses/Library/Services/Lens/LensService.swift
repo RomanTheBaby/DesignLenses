@@ -10,15 +10,34 @@ import Foundation
 
 final class LensService {
 
-	enum FilterType {
+	enum FilterType: Equatable {
 		case none
 		case name
 		case category(LensCategory)
+
+		var description: String {
+			switch self {
+			case .none:
+				return "Lenses"
+			case .name:
+				return "Name Sorted Lenses"
+			case .category(let category):
+				return category.description
+			}
+		}
 	}
 
 	lazy var fetchedLenses = fileData()
+	private(set) lazy var currentFilter: FilterType = .name
+
+	func willChange(with filterType: FilterType) -> Bool {
+		return currentFilter != filterType
+	}
 
 	func filter(by filterType: FilterType) -> [Lens] {
+
+		currentFilter = filterType
+
 		switch filterType {
 		case .none:
 			return fetchedLenses

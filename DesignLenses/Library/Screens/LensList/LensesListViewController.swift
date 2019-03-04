@@ -62,8 +62,14 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 	}
 
 	private func loadCards(with filter: LensService.FilterType = .none) {
+		guard lensService.willChange(with: filter) else { return }
+
+		title = filter.description
+
 		lenses = lensService.filter(by: filter)
 		collectionView.reloadData()
+
+		guard !lenses.isEmpty else { return }
 
 		collectionView.scrollToItem(at: .init(row: 0, section: 0), at: .top, animated: true)
 	}
