@@ -6,6 +6,7 @@
 //  Copyright © 2019 baby. All rights reserved.
 //
 
+import CoreData
 import Foundation
 
 final class LensService {
@@ -30,12 +31,19 @@ final class LensService {
 	lazy var fetchedLenses = fileData()
 	private(set) lazy var currentFilter: FilterType = .name
 
+	private let persistanceService: PersistenceServiceProtocol
+
+	init(persistanceService: PersistenceServiceProtocol = Dependencies.shared.persistanceService) {
+		self.persistanceService = persistanceService
+
+		fetchedLenses = loadFirstCards()
+	}
+
 	func willChange(with filterType: FilterType) -> Bool {
 		return currentFilter != filterType
 	}
 
 	func filter(by filterType: FilterType) -> [Lens] {
-
 		currentFilter = filterType
 
 		switch filterType {
@@ -48,6 +56,30 @@ final class LensService {
 		}
 	}
 
+	private func loadFirstCards() -> [Lens] {
+		let rawCards = fetchRawObjects()
+
+		guard rawCards.isEmpty else {
+			return rawCards.map { $0.asDomain }
+		}
+
+		let fileLenses = fileData()
+
+		fileLenses.forEach { lens in
+			let managedLens = CDLens(context: persistanceService.context)
+			managedLens.update(with: lens)
+		}
+
+		try? persistanceService.saveContext()
+
+		return fileLenses
+	}
+
+	func fetchRawObjects() -> [CDLens] {
+		let fetchRequest: NSFetchRequest<CDLens> = CDLens.fetchRequest()
+		let cards = try? persistanceService.context.fetch(fetchRequest)
+		return cards ?? []
+	}
 }
 
 private func fileData() -> [Lens] {

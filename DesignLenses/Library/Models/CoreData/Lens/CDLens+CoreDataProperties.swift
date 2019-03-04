@@ -25,8 +25,7 @@ extension CDLens {
     @NSManaged public var quote: String?
     @NSManaged public var quoteAuthor: String?
     @NSManaged public var title: String
-    @NSManaged public var category: CDLensCategory
-
+    @NSManaged public var categoriesIdentifiers: [Int]
 }
 
 extension CDLens {
@@ -35,6 +34,6 @@ extension CDLens {
 					prompt: prompt, imageName: imageName,
 					questions: questions, isFavorite: isFavorite,
 					quote: quote, quoteAuthor: quoteAuthor,
-					categoriesIds: [0])
+					categoriesIds: categoriesIdentifiers)
 	}
 }

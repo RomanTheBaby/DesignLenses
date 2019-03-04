@@ -13,4 +13,16 @@ import Foundation
 @objc(CDLens)
 public class CDLens: NSManagedObject {
 
+	func update(with lens: Lens) {
+		self.identifier = lens.id
+		self.imageName = lens.imageName
+		self.isFavorite = lens.isFavorite
+		self.prompt = lens.prompt
+		self.questions = lens.questions
+		self.quote = lens.quote
+		self.quoteAuthor = lens.quoteAuthor
+		self.title = lens.title
+		self.categoriesIdentifiers = lens.categoriesIds
+	}
+
 }
