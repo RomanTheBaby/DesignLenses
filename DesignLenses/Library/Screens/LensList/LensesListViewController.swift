@@ -27,7 +27,7 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 
 	private func prepareNavigationControls() {
 		let filterButton = UIBarButtonItem(image: #imageLiteral(resourceName: "FilterIcon"), style: .plain,
-										   target: self, action: #selector(scrollToBottom))
+										   target: self, action: #selector(showFilterOptions))
 		filterButton.tintColor = .black
 
 		navigationItem.rightBarButtonItem = filterButton
@@ -37,10 +37,6 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 		settingsItem.tintColor = .black
 
 		navigationItem.leftBarButtonItem = settingsItem
-	}
-
-	@objc private func scrollToBottom() {
-		collectionView.scrollToItem(at: IndexPath(row: 89, section: 0), at: .top, animated: true)
 	}
 
 	@objc private func showSettings() {
@@ -65,9 +61,11 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 		collectionView.register(cell: LenseCell.self)
 	}
 
-	private func loadCards() {
-		lenses = lensService.fetchStoredLenses()
+	private func loadCards(with filter: LensService.FilterType = .none) {
+		lenses = lensService.filter(by: filter)
 		collectionView.reloadData()
+
+		collectionView.scrollToItem(at: .init(row: 0, section: 0), at: .top, animated: true)
 	}
 
 	private func presentDetails(for lenses: [Lens], from index: Int) {
@@ -82,6 +80,50 @@ extension LensesListViewController {
 	struct Constants {
 		static let Offset: CGFloat = 16.0
 		static let LensesInheritemSpacing: CGFloat = 32.0
+	}
+}
+
+extension LensesListViewController {
+	@objc private func showFilterOptions() {
+		let alertController = UIAlertController(title: "Choose filter type:", message: nil, preferredStyle: .actionSheet)
+		let actionNone = UIAlertAction(title: "None", style: .default) { [weak self] _ in
+			self?.loadCards()
+		}
+
+		let actionName = UIAlertAction(title: "Name", style: .default) { [weak self] _ in
+			self?.loadCards(with: .name)
+		}
+
+		let actionDesigner = UIAlertAction(title: "Category: Designer", style: .default) { [weak self] _ in
+			self?.loadCards(with: .category(.designer))
+		}
+
+		let actionPlayer = UIAlertAction(title: "Category: Player", style: .default) { [weak self] _ in
+			self?.loadCards(with: .category(.player))
+		}
+
+		let actionExperience = UIAlertAction(title: "Category: Experience", style: .default) { [weak self] _ in
+			self?.loadCards(with: .category(.experience))
+		}
+
+		let actionProcess = UIAlertAction(title: "Category: Process", style: .default) { [weak self] _ in
+			self?.loadCards(with: .category(.process))
+		}
+
+		let actionGame = UIAlertAction(title: "Category: Game", style: .default) { [weak self] _ in
+			self?.loadCards(with: .category(.game))
+		}
+
+		alertController.addAction(actionNone)
+		alertController.addAction(actionName)
+		alertController.addAction(actionDesigner)
+		alertController.addAction(actionPlayer)
+		alertController.addAction(actionExperience)
+		alertController.addAction(actionProcess)
+		alertController.addAction(actionGame)
+
+		alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+		present(alertController, animated: true, completion: nil)
 	}
 }
 

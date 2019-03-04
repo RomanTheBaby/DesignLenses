@@ -34,6 +34,7 @@ extension CDLens {
 		return Lens(id: identifier, title: title,
 					prompt: prompt, imageName: imageName,
 					questions: questions, isFavorite: isFavorite,
-					quote: quote, quoteAuthor: quoteAuthor)
+					quote: quote, quoteAuthor: quoteAuthor,
+					categoryId: 0)
 	}
 }

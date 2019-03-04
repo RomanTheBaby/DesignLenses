@@ -1,8 +1,8 @@
 //
-//  Lense.swift
+//  Lens.swift
 //  DesignLenses
 //
-//  Created by Baby on 2/28/19.
+//  Created by Baby on 3/4/19.
 //  Copyright © 2019 baby. All rights reserved.
 //
 
@@ -18,4 +18,12 @@ struct Lens: Decodable {
 
 	let quote: String?
 	let quoteAuthor: String?
+
+	let categoryId: Int16
+}
+
+extension Lens {
+	var category: LensCategory {
+		return LensCategory(rawValue: Int(categoryId))!
+	}
 }
