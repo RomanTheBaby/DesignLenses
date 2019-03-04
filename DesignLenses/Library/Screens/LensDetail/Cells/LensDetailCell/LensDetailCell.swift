@@ -33,7 +33,7 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 	}
 
 	func render(_ lens: Lens) {
-		nameLabel.text = lens.title
+		nameLabel.text = "The Lens of " + lens.title
 		imageView.image = #imageLiteral(resourceName: lens.imageName)
 
 		favoriteButton.setImage(lens.isFavorite ? #imageLiteral(resourceName: "StarFilledIcon") : #imageLiteral(resourceName: "StarIcon"), for: .normal)

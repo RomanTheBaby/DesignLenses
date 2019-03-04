@@ -551,7 +551,7 @@
 				"If \"1\" means all physical, and \"10\" means all mental, what number would my game get?"
 			],
 			"title": "Head and Hands",
-			"imageName": "Emotion",
+			"imageName": "HeadHands",
 			"isFavorite": false
 		},
 		{
@@ -581,7 +581,7 @@
 				"Tasks that force communication inspire cooperation. Do any of my tasks force communication?"
 			],
 			"title": "Cooperation",
-			"imageName": "Emotion",
+			"imageName": "Cooperation",
 			"isFavorite": false
 		},
 		{
@@ -594,7 +594,7 @@
 				"Is team competition something that makes sense for my game? Is my game more fun with team competition, or with solo competition?"
 			],
 			"title": "Competition vs. Cooperation",
-			"imageName": "Emotion",
+			"imageName": "CompetitionCooperation",
 			"isFavorite": false
 		},
 		{
@@ -608,7 +608,7 @@
 				"How are my rewards building? Too fast, too slow, or just right?"
 			],
 			"title": "Reward",
-			"imageName": "Emotion",
+			"imageName": "Reward",
 			"isFavorite": false
 		},
 		{
@@ -635,7 +635,7 @@
 				"Are there elements of my game that are too simple?"
 			],
 			"title": "Simplicity/Complexity",
-			"imageName": "Emotion",
+			"imageName": "SimplicityComplexity",
 			"isFavorite": false
 		},
 		{
@@ -648,7 +648,7 @@
 				"For elements with several purposes, is it possible for them to take on even more?"
 			],
 			"title": "Elegance",
-			"imageName": "Emotion",
+			"imageName": "Elegance",
 			"isFavorite": false
 		},
 		{
@@ -660,7 +660,7 @@
 				"Does my game have flaws that players like?"
 			],
 			"title": "Character",
-			"imageName": "Emotion",
+			"imageName": "Character",
 			"isFavorite": false
 		},
 		{
@@ -676,7 +676,7 @@
 				"What details that I provide stifle imagination?"
 			],
 			"title": "Imagination",
-			"imageName": "Emotion",
+			"imageName": "Imagination",
 			"isFavorite": false
 		},
 		{
@@ -699,7 +699,7 @@
 				"Does my game feel right? Why or why not?"
 			],
 			"title": "Balance",
-			"imageName": "Emotion",
+			"imageName": "Balance",
 			"isFavorite": false
 		},
 		{
@@ -711,7 +711,7 @@
 				"character"
 			],
 			"title": "Accessibility",
-			"imageName": "Emotion",
+			"imageName": "Accessibility",
 			"isFavorite": false
 		},
 		{
@@ -723,7 +723,7 @@
 				"What progress is visible, and what progress is hidden? Can I find a way to reveal what is hidden?"
 			],
 			"title": "Visible Progress",
-			"imageName": "Emotion",
+			"imageName": "Progress",
 			"isFavorite": false
 		},
 		{
@@ -735,7 +735,7 @@
 				"Can my parallel challenges be connected somehow? Is there a way that making progress on one can make it easier to solve the others?"
 			],
 			"title": "Parallelism",
-			"imageName": "Emotion",
+			"imageName": "Parallelism",
 			"isFavorite": false
 		},
 		{
@@ -787,7 +787,7 @@
 				"How does the player see, hear, and touch the world of the game? Is there a way to include a physical output device that will make the world become more real in the player's imagination?"
 			],
 			"title": "Physical Interface",
-			"imageName": "Emotion",
+			"imageName": "Physical",
 			"isFavorite": false
 		},
 		{
@@ -801,7 +801,7 @@
 				"What kind of virtual interface is best suited to my physical interface? Pop-up menus, for example, are a poor match for a gamepad controller?"
 			],
 			"title": "Virtual Interface",
-			"imageName": "Emotion",
+			"imageName": "Virtual",
 			"isFavorite": false
 		},
 		{
@@ -817,7 +817,7 @@
 				"Do players feel a sense of immersion when using the interface?"
 			],
 			"title": "Transparency",
-			"imageName": "Emotion",
+			"imageName": "Transparency",
 			"isFavorite": false
 		},
 		{
@@ -831,7 +831,7 @@
 				"What is the player's goal at this moment? What feedback will help them toward that goal?"
 			],
 			"title": "Feedback",
-			"imageName": "Emotion",
+			"imageName": "Feedback",
 			"isFavorite": false
 		},
 		{
@@ -843,7 +843,7 @@
 				"Juicy systems reward the player many ways at once. When I give the player a reward, how many ways am I simultaneously rewarding them? can I find more ways?"
 			],
 			"title": "Juiciness",
-			"imageName": "Emotion",
+			"imageName": "Juiciness",
 			"isFavorite": false
 		},
 		{
@@ -854,7 +854,7 @@
 				"What parts of my game could be more primal?"
 			],
 			"title": "Primality",
-			"imageName": "Emotion",
+			"imageName": "Primality",
 			"isFavorite": false
 		},
 		{
@@ -882,7 +882,7 @@
 				"When the game changes modes, how does the player know that? Can the game communicate the mode change in more than one way?"
 			],
 			"title": "Modes",
-			"imageName": "Emotion",
+			"imageName": "Modes",
 			"isFavorite": false
 		},
 		{
@@ -893,7 +893,7 @@
 				"How can I make each moment as powerful as possible?"
 			],
 			"title": "Moments",
-			"imageName": "Emotion",
+			"imageName": "Moments",
 			"isFavorite": false
 		},
 		{
@@ -909,7 +909,7 @@
 				"Do my intuitions about the interest curve match the observed interest of the players? If I ask play-testers to draw an interest curve, what does it look like?"
 			],
 			"title": "Interest Curve",
-			"imageName": "Emotion",
+			"imageName": "InterestCurve",
 			"isFavorite": false
 		},
 		{
@@ -923,7 +923,7 @@
 				"Does dramatic change and anticipation of dramatic change happen in my game? How can it be more dramatic?"
 				],
 			"title": "Inherent Interest",
-			"imageName": "Emotion",
+			"imageName": "InherentInterest",
 			"isFavorite": false
 		},
 		{
@@ -935,7 +935,7 @@
 				"What does beauty mean within the context of my game?"
 			],
 			"title": "Beauty",
-			"imageName": "Emotion",
+			"imageName": "Beauty",
 			"isFavorite": false
 		},
 		{
@@ -951,7 +951,7 @@
 				"Is there an activity in the game that once a player starts doing, it is hard to stop?"
 			],
 			"title": "Projection",
-			"imageName": "Emotion",
+			"imageName": "Projection",
 			"isFavorite": false
 		},
 		{
@@ -965,7 +965,7 @@
 				"A story is only good if you can tell it. Who can your players tell the story to that will actually care?"
 			],
 			"title": "Story Machine",
-			"imageName": "Emotion",
+			"imageName": "StoryMachine",
 			"isFavorite": false
 		},
 		{
@@ -980,7 +980,7 @@
 				"Great stories often involve the protagonist transforming in order to overcome the obstacle. How does your protagonist transform?"
 			],
 			"title": "Obstacle",
-			"imageName": "Emotion",
+			"imageName": "Obstacle",
 			"isFavorite": false
 		},
 		{
@@ -992,7 +992,7 @@
 				"Is my combination of simplicity and transcendence contrived, or does it provide my players with a special kind of wish fulfillment?"
 			],
 			"title": "Simplicity and Transcendence",
-			"imageName": "Emotion",
+			"imageName": "SimplicityTranscendence",
 			"isFavorite": false
 		},
 		{
@@ -1005,7 +1005,7 @@
 				"Does my story match this form so closely that it feels hackneyed?"
 			],
 			"title": "Hero's Journey",
-			"imageName": "Emotion",
+			"imageName": "Journey",
 			"isFavorite": false
 		},
 		{
@@ -1018,7 +1018,7 @@
 				"If there is nothing weird in my story, is the story still interesting?"
 			],
 			"title": "The Weirdest Thing",
-			"imageName": "Emotion",
+			"imageName": "WeirdestThing",
 			"isFavorite": false
 		},
 		{
@@ -1032,7 +1032,7 @@
 				"How can my story be better?"
 			],
 			"title": "Story",
-			"imageName": "Emotion",
+			"imageName": "Story",
 			"isFavorite": false
 		},
 		{
@@ -1045,7 +1045,7 @@
 				"Are there any places where they are overwhelmed by too much freedom?"
 			],
 			"title": "Freedom",
-			"imageName": "Emotion",
+			"imageName": "Freedom",
 			"isFavorite": false
 		},
 		{
@@ -1058,7 +1058,7 @@
 				"How can the helped characters show their appreciation?"
 			],
 			"title": "Help",
-			"imageName": "Emotion",
+			"imageName": "Help",
 			"isFavorite": false
 		},
 		{
@@ -1087,7 +1087,7 @@
 				"How can the characters help fulfill this experience, without compromising their goals in the game world?"
 			],
 			"title": "Collusion",
-			"imageName": "Emotion",
+			"imageName": "Collusion",
 			"isFavorite": false
 		},
 		{
@@ -1111,7 +1111,7 @@
 				"Is my world centered on a single story, or could many stories happen here?"
 			],
 			"title": "The World",
-			"imageName": "Emotion",
+			"imageName": "World",
 			"isFavorite": false
 		},
 		{
@@ -1122,7 +1122,7 @@
 				"Does my avatar have iconic qualities that let a player project themselves into the character?"
 			],
 			"title": "The Avatar",
-			"imageName": "Emotion",
+			"imageName": "Avatar",
 			"isFavorite": false
 		},
 		{
@@ -1137,7 +1137,7 @@
 				"Do I need any new characters?"
 			],
 			"title": "Character Function",
-			"imageName": "Emotion",
+			"imageName": "CharacterFunction",
 			"isFavorite": false
 		},
 		{
@@ -1148,7 +1148,7 @@
 				"How do these traits manifest themselves in the words, actions, and appearance of my character?"
 			],
 			"title": "Character Traits",
-			"imageName": "Emotion",
+			"imageName": "Traits",
 			"isFavorite": false
 		},
 		{
@@ -1160,7 +1160,7 @@
 				"Are the character's friends in the same quadrant, or different quadrants? What if that were different?"
 			],
 			"title": "Interpersonal Circumplex",
-			"imageName": "Emotion",
+			"imageName": "InterpersonalCircumplex",
 			"isFavorite": false
 		},
 		{
@@ -1172,7 +1172,7 @@
 				"Are there too many similar connections? How can they be more different?"
 			],
 			"title": "The Character Web",
-			"imageName": "Emotion",
+			"imageName": "CharacterWeb",
 			"isFavorite": false
 		},
 		{
@@ -1186,7 +1186,7 @@
 				"How am I giving the player a chance to express status?"
 			],
 			"title": "Status",
-			"imageName": "Emotion",
+			"imageName": "Status",
 			"isFavorite": false
 		},
 		{
@@ -1213,7 +1213,7 @@
 				"If so, how can I change that?"
 			],
 			"title": "Inner Contradiction",
-			"imageName": "Emotion",
+			"imageName": "InnerContradiction",
 			"isFavorite": false
 		},
 		{

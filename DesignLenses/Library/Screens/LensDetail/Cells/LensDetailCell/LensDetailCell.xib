@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="width" secondItem="Dba-G0-hlo" secondAttribute="height" multiplier="16:9" id="mwN-9a-3LW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="f72-DJ-QoW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="f72-DJ-QoW">
                                 <rect key="frame" x="16" y="280" width="373" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="ow7-t7-19d"/>
@@ -56,7 +56,7 @@
                                 <state key="normal" image="StarIcon"/>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljL-3o-FiE">
-                                <rect key="frame" x="16" y="480.5" width="437" height="284.5"/>
+                                <rect key="frame" x="16" y="480.5" width="437" height="207"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
@@ -114,7 +114,6 @@
                             <constraint firstAttribute="bottom" secondItem="Dba-G0-hlo" secondAttribute="bottom" constant="501" id="h9z-na-jZe"/>
                             <constraint firstItem="vp2-B5-X6K" firstAttribute="leading" secondItem="i2D-CS-rfG" secondAttribute="leading" constant="24" id="jVD-gd-jlB"/>
                             <constraint firstItem="Vi5-i1-rHD" firstAttribute="leading" secondItem="f72-DJ-QoW" secondAttribute="trailing" constant="16" id="kND-uL-yPk"/>
-                            <constraint firstAttribute="bottom" secondItem="ljL-3o-FiE" secondAttribute="bottom" id="oC6-u2-2l1"/>
                             <constraint firstItem="f72-DJ-QoW" firstAttribute="leading" secondItem="i2D-CS-rfG" secondAttribute="leading" constant="16" id="okl-Ig-laB"/>
                             <constraint firstItem="cGs-D4-trI" firstAttribute="leading" secondItem="i2D-CS-rfG" secondAttribute="leading" constant="16" id="tU0-Tf-Sw2"/>
                             <constraint firstItem="f72-DJ-QoW" firstAttribute="top" secondItem="Dba-G0-hlo" secondAttribute="bottom" constant="16" id="uDE-oy-C2g"/>
