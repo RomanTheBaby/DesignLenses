@@ -92,31 +92,32 @@ extension LensesListViewController {
 extension LensesListViewController {
 	@objc private func showFilterOptions() {
 		let alertController = UIAlertController(title: "Choose filter type:", message: nil, preferredStyle: .actionSheet)
-		let actionNone = UIAlertAction(title: "None", style: .default) { [weak self] _ in
+		let filter = lensService.currentFilter
+		let actionNone = UIAlertAction( title: "None \(filter == .none ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
 			self?.loadCards()
 		}
 
-		let actionName = UIAlertAction(title: "Name", style: .default) { [weak self] _ in
+		let actionName = UIAlertAction(title: "Name \(filter == .name ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
 			self?.loadCards(with: .name)
 		}
 
-		let actionDesigner = UIAlertAction(title: "Category: Designer", style: .default) { [weak self] _ in
+		let actionDesigner = UIAlertAction(title: "Category: Designer \(filter == .category(.designer) ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
 			self?.loadCards(with: .category(.designer))
 		}
 
-		let actionPlayer = UIAlertAction(title: "Category: Player", style: .default) { [weak self] _ in
+		let actionPlayer = UIAlertAction( title: "Category: Player \(filter == .category(.player) ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
 			self?.loadCards(with: .category(.player))
 		}
 
-		let actionExperience = UIAlertAction(title: "Category: Experience", style: .default) { [weak self] _ in
+		let actionExperience = UIAlertAction(title: "Category: Experience \(filter == .category(.experience) ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
 			self?.loadCards(with: .category(.experience))
 		}
 
-		let actionProcess = UIAlertAction(title: "Category: Process", style: .default) { [weak self] _ in
+		let actionProcess = UIAlertAction(title: "Category: Process \(filter == .category(.process) ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
 			self?.loadCards(with: .category(.process))
 		}
 
-		let actionGame = UIAlertAction(title: "Category: Game", style: .default) { [weak self] _ in
+		let actionGame = UIAlertAction(title: "Category: Game \(filter == .category(.game) ? " ✔︎" : "  ")", style: .default) { [weak self] _ in
 			self?.loadCards(with: .category(.game))
 		}
 
