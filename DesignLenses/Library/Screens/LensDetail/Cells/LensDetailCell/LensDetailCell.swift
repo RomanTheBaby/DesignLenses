@@ -34,6 +34,7 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 
 	func render(_ lens: Lens) {
 		favoriteButton.lens = lens
+		categoryLabel.text = lens.categories.map { $0.description }.joined(separator: ", ")
 
 		nameLabel.text = "The Lens of " + lens.title
 		imageView.image = #imageLiteral(resourceName: lens.imageName)
