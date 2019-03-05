@@ -15,7 +15,7 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 	@IBOutlet weak private var nameLabel: UILabel!
 	@IBOutlet weak private var imageView: UIImageView!
 	@IBOutlet weak private var categoryLabel: UILabel!
-	@IBOutlet weak private var favoriteButton: UIButton!
+	@IBOutlet weak private(set) var favoriteButton: LensLikeButton!
 	@IBOutlet weak private var questionsTextView: UITextView!
 
 	@IBOutlet weak private var promptContainer: UIView!
@@ -33,6 +33,8 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 	}
 
 	func render(_ lens: Lens) {
+		favoriteButton.lens = lens
+
 		nameLabel.text = "The Lens of " + lens.title
 		imageView.image = #imageLiteral(resourceName: lens.imageName)
 

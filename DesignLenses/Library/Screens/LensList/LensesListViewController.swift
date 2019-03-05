@@ -66,22 +66,32 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 		fetchLenses(filterType: filter)
 	}
 
-	private func fetchLenses(filterType: LensService.FilterType) {
+	private func fetchLenses(filterType: LensService.FilterType, scrollToTop: Bool = true) {
 		title = filterType.description
 
 		lenses = lensService.filter(by: filterType)
 		collectionView.reloadData()
 
-		guard !lenses.isEmpty else { return }
+		guard !lenses.isEmpty, scrollToTop else { return }
 
 		collectionView.scrollToItem(at: .init(row: 0, section: 0), at: .top, animated: true)
 	}
 
 	private func presentDetails(for lenses: [Lens], from index: Int) {
 		let detailController = LensDetailViewController.instantiateFromStoryboard()
+		detailController.lensService = lensService
 		detailController.setLensesQueue(lenses, startIndex: index)
 
+		detailController.cardsUpdated = { [weak self] in
+			self?.updateLenses()
+		}
+
 		present(detailController, animated: true, completion: nil)
+	}
+
+	private func updateLenses() {
+		lenses = lensService.filter(by: lensService.currentFilter)
+		collectionView.reloadData()
 	}
 }
 
@@ -145,7 +155,7 @@ extension LensesListViewController {
 		guard var lens = button.lens else { return }
 		lens.isFavorite = !lens.isFavorite
 		lensService.update(lens: lens)
-		fetchLenses(filterType: lensService.currentFilter)
+		fetchLenses(filterType: lensService.currentFilter, scrollToTop: false)
 	}
 }
 

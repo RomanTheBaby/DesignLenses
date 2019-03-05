@@ -14,6 +14,9 @@ final class LensDetailViewController: UIViewController, StoryboardInstantiatable
 
 	private var lenses: [Lens] = []
 	private var startIndex: Int = 0
+	var lensService: LensService!
+
+	var cardsUpdated: (() -> Void)?
 
 	override var prefersStatusBarHidden: Bool {
 		return true
@@ -47,7 +50,6 @@ final class LensDetailViewController: UIViewController, StoryboardInstantiatable
 	// MARK: - Private Methods
 
 	private func prepareCollectionLayout() {
-
 		let layout = UICollectionViewFlowLayout()
 		layout.scrollDirection = .horizontal
 		layout.minimumLineSpacing = 0
@@ -58,6 +60,17 @@ final class LensDetailViewController: UIViewController, StoryboardInstantiatable
 		collectionView.collectionViewLayout = layout
 		collectionView.register(cell: LensDetailCell.self)
 		collectionView.isPagingEnabled = true
+	}
+
+	@objc private func lensFavoriteButtonTap(_ button: LensLikeButton) {
+		guard var lens = button.lens else { return }
+		lens.isFavorite = !lens.isFavorite
+		lensService.update(lens: lens)
+
+		cardsUpdated?()
+
+		lenses = lensService.filter(by: lensService.currentFilter)
+		collectionView.reloadData()
 	}
 
 	@IBAction private func actionClose(_ sender: UIButton) {
@@ -74,6 +87,7 @@ extension LensDetailViewController: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withType: LensDetailCell.self, forItemAt: indexPath)
+		cell.favoriteButton.addTarget(self, action: #selector(lensFavoriteButtonTap(_:)), for: .touchUpInside)
 		cell.render(lenses[indexPath.row])
 		return cell
 	}
