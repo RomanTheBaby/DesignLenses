@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+import GoogleUtilities
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	private var appCoordinator: AppCoordinator?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+		FirebaseApp.configure()
+
 		configureAppCoordinator()
+
+		if let gai = GAI.sharedInstance() {
+			// Optional: automatically report uncaught exceptions.
+			gai.trackUncaughtExceptions = true
+
+			// Optional: set Logger to VERBOSE for debug information.
+			// Remove before app release.
+			//		gai.logger.logLevel = .verbose;
+		}
+
 		return true
 	}
 
