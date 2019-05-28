@@ -32,6 +32,12 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 		promptContainer.layer.cornerRadius = 8.0
 	}
 
+	override func layoutSubviews() {
+		super.layoutSubviews()
+
+		scrollView.contentSize.height = questionsTextView.frame.maxY
+	}
+
 	func render(_ lens: Lens) {
 		favoriteButton.lens = lens
 		categoryLabel.text = lens.categories.map { $0.description }.joined(separator: ", ")
@@ -49,8 +55,6 @@ final class LensDetailCell: UICollectionViewCell, NibInitializable, ReusableCell
 
 		quoteAuthorLabel.text = lens.quoteAuthor
 		quoteAuthorLabel.isHidden = lens.quoteAuthor == nil
-
-		promptContainer.layoutSubviews()
 	}
 
 	override func prepareForReuse() {
