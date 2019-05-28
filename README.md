@@ -14,3 +14,7 @@ For this app I took lenses from Jesse Shell book called: "The art of Game-Design
 # References
 
 If you know someone who is looking for game designer feel free to recomment me! Thanks!
+
+# Useless changes
+
+Lady luck is a hooker and you are fresh out of cash © Max Payne
