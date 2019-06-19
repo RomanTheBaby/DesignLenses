@@ -19,7 +19,6 @@
 		0941BC052228500300603286 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC042228500300603286 /* PersistenceService.swift */; };
 		0941BC082228509800603286 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC072228509800603286 /* UIWindow+Extension.swift */; };
 		0941BC0A222850E100603286 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC09222850E100603286 /* Dependencies.swift */; };
-		0941BC0C2228578C00603286 /* LensesListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC0B2228578C00603286 /* LensesListViewController.storyboard */; };
 		0941BC1522285C8200603286 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC1422285C8200603286 /* UIView+Extension.swift */; };
 		0941BC2122288A6F00603286 /* CDLens+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */; };
 		0941BC2422288B1F00603286 /* Lens.json in Resources */ = {isa = PBXBuildFile; fileRef = 0941BC2322288B1F00603286 /* Lens.json */; };
@@ -62,7 +61,6 @@
 		0941BC042228500300603286 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		0941BC072228509800603286 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		0941BC09222850E100603286 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
-		0941BC0B2228578C00603286 /* LensesListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LensesListViewController.storyboard; sourceTree = "<group>"; };
 		0941BC1422285C8200603286 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		0941BC1F22288A6F00603286 /* CDLens+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLens+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0941BC2322288B1F00603286 /* Lens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lens.json; sourceTree = "<group>"; };
@@ -127,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				0941BBF122284E2200603286 /* App */,
+				0941BBF622284EA000603286 /* Screens */,
 				0941BBF222284E3100603286 /* Library */,
 				0941BBF022284E1300603286 /* Resources */,
 				0941BBE722284E0D00603286 /* LaunchScreen.storyboard */,
@@ -163,7 +162,6 @@
 				0941BC062228509000603286 /* Extensions */,
 				0941BBFA22284ED600603286 /* Protocols */,
 				0941BC0322284FFD00603286 /* Services */,
-				0941BBF622284EA000603286 /* Screens */,
 				0941BBF322284E3900603286 /* Models */,
 			);
 			path = Library;
@@ -195,7 +193,6 @@
 			children = (
 				09CBF496222DC7C800E63AEF /* LensCell */,
 				0941BBF822284EB900603286 /* LensesListViewController.swift */,
-				0941BC0B2228578C00603286 /* LensesListViewController.storyboard */,
 			);
 			path = LensList;
 			sourceTree = "<group>";
@@ -425,7 +422,6 @@
 			files = (
 				096CD066222AEF6700946444 /* SettingsViewController.storyboard in Resources */,
 				0941BC2422288B1F00603286 /* Lens.json in Resources */,
-				0941BC0C2228578C00603286 /* LensesListViewController.storyboard in Resources */,
 				096CD072222AFA5700946444 /* InfoViewController.storyboard in Resources */,
 				096CD06B222AF17B00946444 /* SettingCell.xib in Resources */,
 				0941BBE922284E0D00603286 /* LaunchScreen.storyboard in Resources */,

@@ -33,5 +33,16 @@ extension UIView {
 		layer.shadowOpacity = opacity
 		layer.shadowOffset = offset
 	}
+
+	func constraints(toEdgesOf view: UIView, insets: UIEdgeInsets = .zero) -> [NSLayoutConstraint] {
+		return [NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal,
+								   toItem: view, attribute: .topMargin, multiplier: 1, constant: insets.top),
+				NSLayoutConstraint(item: self, attribute: .bottomMargin, relatedBy: .equal,
+								   toItem: view, attribute: .bottomMargin, multiplier: 1, constant: insets.bottom),
+				NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal,
+								   toItem: view, attribute: .leading, multiplier: 1, constant: insets.left),
+				NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal,
+								   toItem: view, attribute: .trailing, multiplier: 1, constant: insets.right)]
+	}
 }
 

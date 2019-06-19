@@ -12,7 +12,7 @@ final class AppCoordinator {
 	private var window: UIWindow?
 
 	private lazy var rootViewController: UINavigationController = {
-		let rootController = LensesListViewController.instantiateFromStoryboard()
+		let rootController = LensesListViewController()
 		let navigationController = UINavigationController(rootViewController: rootController)
 		navigationController.navigationBar.barTintColor = .white
 		navigationController.navigationBar.isTranslucent = false

@@ -20,4 +20,8 @@ extension UIViewController {
 		
 		present(alertController, animated: true, completion: nil)
 	}
+
+	func constraint(edgesOf childView: UIView, toView view: UIView, with insets: UIEdgeInsets = .zero) {
+		NSLayoutConstraint.activate(childView.constraints(toEdgesOf: view, insets: insets))
+	}
 }

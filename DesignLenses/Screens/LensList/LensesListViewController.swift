@@ -8,12 +8,21 @@
 
 import UIKit
 
-final class LensesListViewController: UIViewController, StoryboardInstantiatable {
+final class LensesListViewController: UIViewController {
 
-	@IBOutlet weak private var collectionView: UICollectionView!
+	private weak var collectionView: UICollectionView!
 
-	private let lensService = LensService()
+	private let lensService: LensService
 	private lazy var lenses: [Lens] = []
+
+	init(lensService: LensService = LensService()) {
+		self.lensService = lensService
+		super.init(nibName: nil, bundle: nil)
+	}
+
+	required init?(coder aDecoder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
 
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,26 +48,30 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 		navigationItem.leftBarButtonItem = settingsItem
 	}
 
-	@objc private func showSettings() {
-		let settingsController = SettingsViewController.instantiateFromStoryboard()
-
-		navigationController?.pushViewController(settingsController, animated: true)
-	}
-
 	private func prepareCollectionLayout() {
-		collectionView.contentInset = UIEdgeInsets(top: Constants.Offset, left: Constants.Offset,
-												   bottom: Constants.Offset, right: Constants.Offset)
 
 		let layout = UICollectionViewFlowLayout()
 		layout.scrollDirection = .vertical
 		layout.minimumLineSpacing = Constants.LensesInheritemSpacing
 
-		let width = UIScreen.main.bounds.width - (Constants.Offset * 2)
-		let height = (width * LensCell.ImageAspectRation) + LensCell.BottomContainerHeight
-		layout.itemSize = CGSize(width: width, height: height)
+		let itemWidth = UIScreen.main.bounds.width - (Constants.Offset * 2)
+		let itemHeight = (itemWidth * LensCell.ImageAspectRation) + LensCell.BottomContainerHeight
+		layout.itemSize = CGSize(width: itemWidth, height: itemHeight)
 
-		collectionView.collectionViewLayout = layout
+		let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+		collectionView.backgroundColor = .white
+		collectionView.translatesAutoresizingMaskIntoConstraints = false
+
+		collectionView.dataSource = self
+		collectionView.delegate = self
+
+		view.addSubview(collectionView)
+
+		constraint(edgesOf: collectionView, toView: view)
+
 		collectionView.register(cell: LensCell.self)
+
+		self.collectionView = collectionView
 	}
 
 	private func safelyLoadLenses(with filter: LensService.FilterType = .none) {
@@ -69,12 +82,15 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 	private func fetchLenses(filterType: LensService.FilterType, scrollToTop: Bool = true) {
 		title = filterType.description
 
-		lenses = lensService.filter(by: filterType)
-		collectionView.reloadData()
+		reloadLenses()
 
 		guard !lenses.isEmpty, scrollToTop else { return }
-
 		collectionView.scrollToItem(at: .init(row: 0, section: 0), at: .top, animated: true)
+	}
+
+	private func reloadLenses(filterType: LensService.FilterType? = nil) {
+		lenses = lensService.filter(by: filterType ?? lensService.currentFilter)
+		collectionView.reloadData()
 	}
 
 	private func presentDetails(for lenses: [Lens], from index: Int) {
@@ -83,15 +99,16 @@ final class LensesListViewController: UIViewController, StoryboardInstantiatable
 		detailController.setLensesQueue(lenses, startIndex: index)
 
 		detailController.cardsUpdated = { [weak self] in
-			self?.updateLenses()
+			self?.reloadLenses()
 		}
 
 		present(detailController, animated: true, completion: nil)
 	}
 
-	private func updateLenses() {
-		lenses = lensService.filter(by: lensService.currentFilter)
-		collectionView.reloadData()
+	@objc private func showSettings() {
+		let settingsController = SettingsViewController.instantiateFromStoryboard()
+
+		navigationController?.pushViewController(settingsController, animated: true)
 	}
 }
 
@@ -103,6 +120,8 @@ extension LensesListViewController {
 }
 
 extension LensesListViewController {
+
+	// MARK: - Do something about this filter
 	@objc private func showFilterOptions() {
 		let alertController = UIAlertController(title: "Choose filter type:", message: nil, preferredStyle: .actionSheet)
 		let filter = lensService.currentFilter
